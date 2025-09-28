@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></script>
+    <title>FlexGenPrompter</title>
+</head>
+<body>
+    <sidebar class="w-64 h-screen bg-gray-800 text-white fixed">
+        <div class="p-4 text-lg font-bold border-b border-gray-700">
+           FlexGenPrompter
+        </div>
+        <nav class="mt-4">
+            <a href="{% url 'home' %}" class="block px-4 py-2 hover:bg-gray-700"><i class="fa-solid fa-house"></i> Início</a>
+            <a href="{% url 'datasets' %}" class="block px-4 py-2 hover:bg-gray-700"><i class="fa-solid fa-database"></i> Datasets</a>
+            <a href="{% url 'home' %}" class="block px-4 py-2 hover:bg-gray-700"><i class="fa-solid fa-chart-simple"></i> Histórico de avaliações</a>
+        </nav>
+    </sidebar>
+    <div class="ml-64 p-4 bg-[#F3F6FE] min-h-screen">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

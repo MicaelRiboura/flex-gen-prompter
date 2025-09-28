@@ -1,0 +1,89 @@
+{% extends 'base/base.html'%}
+
+{% block content %}
+<div class="p-8">
+    <h1 class="text-3xl font-bold mb-6">Início</h1>
+    <div class="bg-white rounded-lg p-6">
+        <h2 class="text-2xl font-semibold mb-4">Nova avaliação</h2>
+        <form action="">
+            <div class="flex space-x-4">
+                <div class="w-1/2">
+                    <label for="country" class="block text-sm/6 font-medium">Dataset</label>
+                    <div class="mt-2 grid grid-cols-1">
+                        <select id="country" name="country" autocomplete="country-name"
+                            class="w-full rounded-md p-2 border-1 border-gray-300 text-gray-900 focus:outline-none">
+                            <option></option>
+                            {% for dataset in datasets %}
+                                <option>{{ dataset }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <label for="country" class="block text-sm/6 font-medium">Técnicas de Prompting</label>
+                    <div class="mt-2 grid grid-cols-1">
+                        <select id="country" name="country" autocomplete="country-name"
+                            class="w-full rounded-md p-2 border-1 border-gray-300 text-gray-900">
+                            <option>United States</option>
+                            <option>Canada</option>
+                            <option>Mexico</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-end my-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 cursor-pointer">
+                    Avaliar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="bg-white rounded-lg p-6 mt-6">
+        <h2 class="text-2xl font-semibold mb-4">Resultado</h2>
+        <div id="barChart" style="width: 100%; height: 400px;"></div>
+    </div>
+
+</div>
+
+<script>
+
+    // import * as echarts from 'echarts';
+
+    var chartDom = document.getElementById('barChart');
+    var myChart = echarts.init(chartDom);
+    var option;
+
+    option = {
+        xAxis: {
+            type: 'category',
+            data: ['Zero-Shot', 'Few-Shot', 'Chain-of-Thought', 'Thu', 'Fri', 'Sat', 'Sun']
+        },
+        yAxis: {
+            type: 'value',
+            max: 100
+        },
+        series: [
+            {
+                data: [
+                    { value: 50, itemStyle: { color: '#005C66' } },
+                    { value: 70, itemStyle: { color: '#00A2AC' } },
+                    { value: 60, itemStyle: { color: '#00F2CE' } },
+                    { value: 90, itemStyle: { color: '#023C4C' } },
+                    { value: 100, itemStyle: { color: '#077897' } },
+                    { value: 80, itemStyle: { color: '#008DF2' } },
+                    { value: 70, itemStyle: { color: '#FFB647' } }
+                ],
+                type: 'bar',
+                showBackground: true,
+                backgroundStyle: {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                }
+            }
+        ]
+    };
+
+    option && myChart.setOption(option);
+</script>
+
+{% endblock %}
