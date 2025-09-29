@@ -5,7 +5,7 @@
     <h1 class="text-3xl font-bold mb-6">Dataset</h1>
     <div class="bg-white shadow-md rounded-lg p-6">
         <div class="flex justify-between items-center mb-4">
-            <a href="{% url 'datasets' %}" class="text-indigo-600 hover:text-indigo-800">
+            <a href="{% url 'datasets' %}" class="text-blue-600 hover:text-blue-800">
                 <i class="fa-solid fa-arrow-left"></i> Voltar para Datasets
             </a>
         </div>
@@ -40,7 +40,7 @@
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-wrap max-w-[40vw]">
                 {{ row.content }}
                 </th>
-                <td class="px-6 py-4 text-indigo-600 font-bold">
+                <td class="px-6 py-4 text-blue-600 font-bold">
                 {{ row.label }}
                 </td>
             </tr>
@@ -65,7 +65,7 @@
 
                 {% for num in page_obj.paginator.page_range %}
                     {% if page_obj.number == num %}
-                        <span class="px-3 py-1 bg-indigo-600 text-white rounded">{{ num }}</span>
+                        <span class="px-3 py-1 bg-blue-600 text-white rounded">{{ num }}</span>
                     {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
                         <a href="?page={{ num }}" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">{{ num }}</a>
                     {% endif %}
