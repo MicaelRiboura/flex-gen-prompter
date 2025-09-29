@@ -2,7 +2,7 @@ from .base_dataset import BaseDataset
 
 class CSQADataset(BaseDataset):
     def __init__(self):
-        data = self._load_dataset("commonsense_qa", "regular")["validation"]
+        data = self._load_dataset("commonsense_qa", "default")["validation"]
         self.data = []
         choice_index = ['A','B','C','D','E']
         for d in data:
