@@ -10,8 +10,8 @@ class DatasetBuilder:
         }
 
     def build(self):
-        if not self.dataset_name:
+        if self.dataset_name:
             dataset = self.dataset_factory.get(self.dataset_name)
-            return dataset() if dataset else None
+            return dataset().data if dataset else None
         
         return None
