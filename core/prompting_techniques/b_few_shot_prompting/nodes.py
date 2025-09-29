@@ -5,8 +5,8 @@ from langchain_core.output_parsers import StrOutputParser
 
 class FewShotAnswerNode(BaseNode):
 
-    def __init__(self, examples):
-        super().__init__()
+    def __init__(self, model, examples):
+        super().__init__(model)
         self.examples = examples
 
     def invoke(self, state) -> FewShotPromptingState:

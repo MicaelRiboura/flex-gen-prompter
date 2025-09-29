@@ -4,13 +4,13 @@ from .nodes import AnswerNode
 
 
 class ChainOfThoughtPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state):
-        super().__init__(state)
+    def __init__(self, state, model):
+        super().__init__(state, model)
 
     def run(self, prompt):
-        super().__init__(self.state)
+        super().__init__(self.state, self.model)
         
-        self.add_node("chain_of_thought_answer", AnswerNode().invoke)
+        self.add_node("chain_of_thought_answer", AnswerNode(model=self.model).invoke)
         self.set_entry_point("chain_of_thought_answer")
         self.add_edge("chain_of_thought_answer", END)
         app = self.compile(save_in="d_a_chain_of_thought_prompting_graph.png")

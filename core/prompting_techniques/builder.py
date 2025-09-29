@@ -4,8 +4,9 @@ class WorkflowBuilder:
     """
     Classe base para construir workflows com LangGraph.
     """
-    def __init__(self, state):
+    def __init__(self, state, model):
         self.state = state
+        self.model = model
         self.workflow = StateGraph(state)
 
     def add_node(self, name: str, function):

@@ -3,8 +3,8 @@ from core.prompting_techniques.builder import WorkflowBuilder
 from .nodes import ThoughtProposerNode, EvaluatorNode, SolverNode
 
 class TreeOfThoughtPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state):
-        super().__init__(state)
+    def __init__(self, state, model):
+        super().__init__(state, model)
         self.min_score = 8
 
     def evaluate_and_select(self, state):
@@ -15,11 +15,11 @@ class TreeOfThoughtPromptingWorkflow(WorkflowBuilder):
             return "propose"
 
     def run(self, prompt):
-        super().__init__(self.state)
+        super().__init__(self.state, self.model)
         
-        self.add_node("proposer", ThoughtProposerNode().invoke)
-        self.add_node("evaluator", EvaluatorNode(min_score=self.min_score).invoke)
-        self.add_node("solver", SolverNode().invoke)
+        self.add_node("proposer", ThoughtProposerNode(model=self.model).invoke)
+        self.add_node("evaluator", EvaluatorNode(model=self.model, min_score=self.min_score).invoke)
+        self.add_node("solver", SolverNode(model=self.model).invoke)
         self.set_entry_point("proposer")
         self.add_edge("proposer", "evaluator")
         self.add_conditional_edge(

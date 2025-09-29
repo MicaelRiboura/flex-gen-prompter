@@ -6,8 +6,8 @@ import re
 
 
 class SelfConsistencyPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state, num_responses=5):
-        super().__init__(state)
+    def __init__(self, state, model, num_responses=5):
+        super().__init__(state, model)
         self.num_responses = num_responses
 
     def should_continue(self, state):
@@ -29,10 +29,10 @@ class SelfConsistencyPromptingWorkflow(WorkflowBuilder):
             return "aggregate"
 
     def run(self, prompt):
-        super().__init__(self.state)
+        super().__init__(self.state, self.model)
         
-        self.add_node("answers_generator", AnswersGeneratorNode().invoke)
-        self.add_node("aggregator_and_evaluator", AggregatorAndEvaluatorNode().invoke)
+        self.add_node("answers_generator", AnswersGeneratorNode(model=self.model).invoke)
+        self.add_node("aggregator_and_evaluator", AggregatorAndEvaluatorNode(model=self.model).invoke)
         self.set_entry_point("answers_generator")
         self.add_conditional_edge(
             "answers_generator",

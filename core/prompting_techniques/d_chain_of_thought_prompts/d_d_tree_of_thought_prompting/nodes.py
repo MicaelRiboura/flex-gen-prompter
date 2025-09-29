@@ -4,6 +4,9 @@ from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 
 class ThoughtProposerNode(BaseNode):
+    def __init__(self, model):
+        super().__init__(model)
+
     def invoke(self, state) -> TreeOfThoughtPromptingState:
         problem = state["prompt"].replace('\nPlease output your answer at the end as ##<your answer (arabic numerals)>', '')
 
@@ -39,8 +42,8 @@ class Evaluation(BaseModel):
 
 
 class EvaluatorNode(BaseNode):
-    def __init__(self, min_score=8):
-        super().__init__()
+    def __init__(self, model, min_score=8):
+        super().__init__(model)
         self.min_score = min_score
     
     def invoke(self, state) -> TreeOfThoughtPromptingState:
@@ -91,6 +94,9 @@ class EvaluatorNode(BaseNode):
 
 
 class SolverNode(BaseNode):
+    def __init__(self, model):
+        super().__init__(model)
+    
     def invoke(self, state) -> TreeOfThoughtPromptingState:
         problem = state["prompt"]
         thoughts = state.get("thoughts", [])

@@ -5,19 +5,20 @@ from core.prompting_techniques.d_chain_of_thought_prompts.d_b_generate_knowledge
 from core.prompting_techniques.d_chain_of_thought_prompts.d_c_self_consistency_prompting import SelfConsistencyPromptingState, SelfConsistencyPromptingWorkflow
 from core.prompting_techniques.d_chain_of_thought_prompts.d_d_tree_of_thought_prompting import TreeOfThoughtPromptingState, TreeOfThoughtPromptingWorkflow
 
-class WorflowFactory:
-    workflow_factory = {
-        "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState),
-        "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState),
-        "chain_of_thought": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState),
-        "generate_knowledge": GenerateKnowledgePromptingWorkflow(state=GenerateKnowledgePromptingState),
-        "self_consistency": SelfConsistencyPromptingWorkflow(state=SelfConsistencyPromptingState),
-        "tree_of_thoughts": TreeOfThoughtPromptingWorkflow(state=TreeOfThoughtPromptingState)
-    }
+class   WorflowFactory:
+    def __init__(self, model):
+        print('model in factory: ', model)
+        self.workflow_factory = {
+            "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState, model=model),
+            "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState, model=model),
+            "chain_of_thought": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState, model=model),
+            "generate_knowledge": GenerateKnowledgePromptingWorkflow(state=GenerateKnowledgePromptingState, model=model),
+            "self_consistency": SelfConsistencyPromptingWorkflow(state=SelfConsistencyPromptingState, model=model),
+            "tree_of_thoughts": TreeOfThoughtPromptingWorkflow(state=TreeOfThoughtPromptingState, model=model)
+        }
 
-    @staticmethod
-    def create_workflow(workflow_type: str):
-        if not workflow_type or workflow_type not in WorflowFactory.workflow_factory:
+    def create_workflow(self, workflow_type: str):
+        if not workflow_type or workflow_type not in self.workflow_factory.keys():
             raise ValueError(f"Unknown workflow type: {workflow_type}")
         
-        return WorflowFactory.workflow_factory[workflow_type]
+        return self.workflow_factory[workflow_type]

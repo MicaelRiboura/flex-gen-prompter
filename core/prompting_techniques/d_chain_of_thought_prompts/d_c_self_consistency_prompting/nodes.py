@@ -8,8 +8,8 @@ import json
 import os
 
 class AnswersGeneratorNode(BaseNode):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, model):
+        super().__init__(model)
 
     def invoke(self, state) -> SelfConsistencyPromptingState:
         prompt = f'You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.\n\n{state['prompt']}'
@@ -22,8 +22,8 @@ class AnswersGeneratorNode(BaseNode):
         
 class AggregatorAndEvaluatorNode(BaseNode):
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, model):
+        super().__init__(model)
         self.FILE_PATH = 'thoughts_graph/self_consistency_thoughts_graph.json'
         
         self.thoughts_graph = {}
