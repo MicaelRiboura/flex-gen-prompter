@@ -5,26 +5,41 @@
     <h1 class="text-3xl font-bold mb-6">Datasets</h1>
     <div class="bg-white shadow-md rounded-lg p-6">
         <h2 class="text-2xl font-semibold mb-4">Datasets Disponíveis</h2>
-        <table class="table-auto min-w-full bg-white border-1 border-gray-300">
-            <thead>
-                <tr>
-                    <th class="px-4 py-2 border-b border-gray-300">Dataset</th>
-                    <th class="px-4 py-2 border-b border-gray-300">Detalhes</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for dataset in datasets %}
-                <tr>
-                    <td class="px-4 py-2 border-b border-gray-300">{{ dataset }}</td>
-                    <td class="px-4 py-2 border-b border-gray-300">Ver detalhes</td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td class="px-4 py-2 border-b border-gray-300" colspan="2">Nenhum dataset disponível.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Dataset
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Detalhes
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for dataset in datasets %}
+                        <tr class="bg-white border-b border-gray-200">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                {{ dataset }}
+                            </th>
+                            <td class="px-6 py-4 text-indigo-600 text-lg hover:text-indigo-800">
+                                <a href="{% url 'dataset_details' dataset_name=dataset %}">
+                                    <i class="fa-solid fa-eye cursor-pointer"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr class="bg-white">
+                            <th colspan="2" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                Nenhum dataset disponível.
+                            </th>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
     
 </div>
