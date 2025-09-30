@@ -1,16 +1,18 @@
 from django.shortcuts import render
 from .services.datasets_service import DatasetsService
 from django.core.paginator import Paginator
-from core.prompting_techniques.workflow_factory import WorflowFactory
 from django.http import JsonResponse
-from .tasks import long_running_task
+from .tasks import evaluate_workflows
 from celery.result import AsyncResult
+from django.views.decorators.http import require_POST
+from core.prompting_techniques.workflow_factory import WorkflowFactory
 
 # Create your views here.
 def home(request):
     service = DatasetsService()
     datasets = service.list_datasets()
-    return render(request, 'home.html', {'datasets': datasets})
+    techniques = WorkflowFactory(model=None).workflow_factory.keys()
+    return render(request, 'home.html', {'datasets': datasets, 'techniques': techniques })
 
 
 def datasets(request):
@@ -31,15 +33,26 @@ def get_dataset_details(request, dataset_name):
         'page_obj': page_obj
     })
 
-
+@require_POST
 def start_evaluation(request):
+    dataset_name = request.POST.get('dataset')
+    model = request.POST.get('model')
+    techniques = request.POST.getlist('techniques')
+    sample = request.POST.get('sample')
+    print('request.POST.dataset_name: ', dataset_name)
+    print('request.POST.model: ', model)
+    print('request.POST.techniques: ', techniques)
+    print('request.POST.sample: ', sample)
 
-    task = long_running_task.delay()
+    service = DatasetsService()
+    dataset = service.get_dataset(dataset_name)
+
+    task = evaluate_workflows.delay(model, dataset, techniques, sample)
 
     return JsonResponse({
         'message': 'Seu processamento foi iniciado! Você será notificado quando terminar.',
         'task_id': task.id
-    }, status=202) # Sta
+    }, status=202)
 
 
 def check_evaluation_status(request, task_id):

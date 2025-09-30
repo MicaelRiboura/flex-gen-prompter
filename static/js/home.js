@@ -2,8 +2,10 @@
 // import * as echarts from 'echarts';
 
 
-function renderBarChart() {
+function renderBarChart(data) {
+    console.log(String(data))
     let chartDom = document.getElementById('barChart');
+    chartDom.classList.remove('hidden');
     if (!chartDom) {
         console.error("Div with id 'barChart' not found.");
         return;
@@ -12,13 +14,18 @@ function renderBarChart() {
         console.error("ECharts library is not loaded.");
         return;
     }
+
     chartDom.style.width = '100%';
     chartDom.style.height = '400px';
+
     let myChart = echarts.init(chartDom);
     let option = {
         xAxis: {
             type: 'category',
-            data: ['Zero-Shot', 'Few-Shot', 'Chain-of-Thought', 'Generate Knowledge', 'Self-Consistency', 'Tree of Thought']
+            data: ['Zero-Shot', 'Few-Shot', 'Chain-of-Thought', 'Generate Knowledge', 'Self-Consistency', 'Tree of Thought'],
+            axisLabel: {
+                interval: 0 // Show all labels
+            }
         },
         yAxis: {
             type: 'value',
@@ -27,13 +34,12 @@ function renderBarChart() {
         series: [
             {
                 data: [
-                    { value: 50, itemStyle: { color: '#005C66' } },
-                    { value: 70, itemStyle: { color: '#00A2AC' } },
-                    { value: 60, itemStyle: { color: '#00F2CE' } },
-                    { value: 90, itemStyle: { color: '#023C4C' } },
-                    { value: 100, itemStyle: { color: '#077897' } },
-                    { value: 80, itemStyle: { color: '#008DF2' } },
-                    // { value: 70, itemStyle: { color: '#FFB647' } }
+                    { value: data?.zero_shot ? data.zero_shot * 100 : 0, itemStyle: { color: '#005C66' } },
+                    { value: data?.few_shot ? data.few_shot * 100 : 0, itemStyle: { color: '#00A2AC' } },
+                    { value: data?.chain_of_thought ? data.chain_of_thought * 100 : 0, itemStyle: { color: '#00F2CE' } },
+                    { value: data?.generate_knowledge ? data.generate_knowledge * 100 : 0, itemStyle: { color: '#023C4C' } },
+                    { value: data?.self_consistency ? data.self_consistency * 100 : 0, itemStyle: { color: '#077897' } },
+                    { value: data?.tree_of_thoghts ? data.tree_of_thoghts * 100 : 0, itemStyle: { color: '#008DF2' } },
                 ],
                 type: 'bar',
                 showBackground: true,
@@ -63,13 +69,46 @@ function renderBarChart() {
     myChart.setOption(option);
 }
 
+function getCookie(name) {
+    let value = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+
+        for (let cookie of cookies) {
+            cookie = cookie.replace(' ', '')
+            const [cookieAttr, cookieValue] = cookie.split('=');
+            if (cookieAttr == name) {
+                value = cookieValue;
+                break;
+            }
+        }
+    }
+
+    return value;
+}
+
 // Função para iniciar o processo
 async function startProcessing() {
-    const response = await fetch('/evaluation/');
+    const evaluateForm = document.getElementById('evaluateForm');
+    const titleResult = document.getElementById('titleResult');
+    titleResult.innerText = `Aguardando...`;
+    document.getElementById('evaluateButton').querySelector('#loading')
+        .classList.remove('hidden');
+    document.getElementById('evaluateButton').disabled = true;
+    const response = await fetch('/evaluation/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRFToken': getCookie('csrftoken'),
+        },
+        body: new URLSearchParams(new FormData(evaluateForm)).toString(),
+    });
+
+
     const data = await response.json();
     const taskId = data.task_id;
     console.log(`Tarefa iniciada com ID: ${taskId}`);
-    localStorage.setItem('taskId', taskId);
+    // localStorage.setItem('taskId', taskId);
 
     // Começa a verificar o status a cada 5 segundos
     checkStatus(taskId);
@@ -83,9 +122,13 @@ function checkStatus(taskId) {
 
         const titleResult = document.getElementById('titleResult');
         const progressElement = document.getElementById('percentageProgressElement');
+        const chartDom = document.getElementById('barChart');
+        chartDom.classList.add('hidden');
 
         if (data.status === 'PENDING') {
             titleResult.innerText = `Aguardando...`;
+            progressElement.classList.remove('relative');
+            progressElement.classList.add('hidden');
         }
 
         if (data.status === 'PROGRESS') {
@@ -106,18 +149,22 @@ function checkStatus(taskId) {
             progressElement.classList.add('hidden');
             clearInterval(interval);
             if (data.status === 'SUCCESS') {
+                document.getElementById('evaluateButton').querySelector('#loading')
+                    .classList.add('hidden');
+                document.getElementById('evaluateButton').disabled = false;
                 titleResult.innerText = `Resultados do Benchmarking`;
-                renderBarChart();
+                renderBarChart(data.result);
             } else {
                 console.error('Erro:', data.error);
-                document.getElementById('status-message').innerText = `Falhou: ${data.error}`;
+                titleResult.innerText = `Avaliação falhou, tente novamente.`;
             }
         }
-    }, 500); // Verifica a cada 5 segundos
+    }, 1000); // Verifica a cada 1 segundo
 }
 
-
-const taskId = localStorage.getItem('taskId');
-if (taskId) {
-    checkStatus(taskId);
-}
+// document.addEventListener('DOMContentLoaded', function () {
+//     const taskId = localStorage.getItem('taskId');
+//     if (taskId) {
+//         checkStatus(taskId);
+//     }
+// });

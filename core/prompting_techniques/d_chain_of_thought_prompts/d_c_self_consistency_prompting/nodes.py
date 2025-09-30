@@ -13,7 +13,7 @@ class AnswersGeneratorNode(BaseNode):
 
     def invoke(self, state) -> SelfConsistencyPromptingState:
         prompt = f'You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.\n\n{state['prompt']}'
-        chain = PromptTemplate.from_template(prompt) | self.llm | StrOutputParser()
+        chain = PromptTemplate.from_template(prompt) | self.model | StrOutputParser()
         responses = []
         for _ in range(state.get('num_responses', 5)):
             response = chain.invoke({"prompt": prompt})

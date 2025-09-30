@@ -32,7 +32,7 @@ class ThoughtProposerNode(BaseNode):
         If is the final step, you must say: "The final step is..."
         """
 
-        response = self.llm.invoke(prompt)
+        response = self.model.invoke(prompt)
 
         return { "new_thought": response.content, "G": G }
 
@@ -64,7 +64,7 @@ class EvaluatorNode(BaseNode):
         New Thought:
         {new_thought}
         """
-        structured_llm = self.llm.with_structured_output(Evaluation)
+        structured_llm = self.model.with_structured_output(Evaluation)
         chain = PromptTemplate.from_template(template=prompt) | structured_llm
         response = chain.invoke({'problem': problem, 'thought_process': thought_process, 'new_thought': new_thought})
 

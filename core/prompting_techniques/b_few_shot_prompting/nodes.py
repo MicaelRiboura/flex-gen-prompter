@@ -29,7 +29,7 @@ class FewShotAnswerNode(BaseNode):
             ]
         )
 
-        chain = final_prompt | self.llm | StrOutputParser()
+        chain = final_prompt | self.model | StrOutputParser()
         result = chain.invoke({"prompt": state['prompt']})
         
         return { "answer": result }

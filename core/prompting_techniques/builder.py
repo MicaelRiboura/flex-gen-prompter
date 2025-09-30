@@ -27,12 +27,12 @@ class WorkflowBuilder:
     
     def compile(self, save_in: str | None = None):
         app = self.workflow.compile()
-        # self._get_graph(app, filename=save_in)
+        self._get_graph(app, filename=save_in)
         return app
 
     def _get_graph(self, app, filename: str | None):
         if filename and app:
             png_graph = app.get_graph().draw_mermaid_png()
-            path_filename = f"graph_images/{filename}"
+            path_filename = f"core/prompting_techniques/graph_images/{filename}"
             with open(path_filename, "wb") as f:
                 f.write(png_graph)

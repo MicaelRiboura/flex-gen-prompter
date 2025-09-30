@@ -1,18 +1,15 @@
 import time
 from celery import shared_task
+from core.evaluators.accuracy_evaluator import AccuracyEvaluator
+
+
 
 @shared_task(bind=True)
-def long_running_task(self):
-    # Simulação de uma tarefa longa
-    total_steps = 300
-    for i in range(total_steps):
-        time.sleep(0.5) # Simula 1 segundo de trabalho
-        # Você pode atualizar o estado da tarefa para fornecer feedback de progresso
-        # current=i, total=total_steps, status='Processando...'
-        current_step = i + 1
-        print(f"Progresso: {current_step}/{total_steps}")
-        self.update_state(state='PROGRESS',
-                          meta={'current': current_step, 'total': total_steps})
+def evaluate_workflows(self, model, dataset, techniques, sample):
+    result = AccuracyEvaluator(dataset, model, techniques).evaluate(
+        num_samples=int(sample),
+        update_state=self.update_state
+    )
 
-    print("Processamento concluído!")
-    return "Relatório gerado com sucesso!"
+    print("Avaliação concluída!")
+    return result

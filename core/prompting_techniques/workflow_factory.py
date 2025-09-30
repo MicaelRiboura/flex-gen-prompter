@@ -5,9 +5,8 @@ from core.prompting_techniques.d_chain_of_thought_prompts.d_b_generate_knowledge
 from core.prompting_techniques.d_chain_of_thought_prompts.d_c_self_consistency_prompting import SelfConsistencyPromptingState, SelfConsistencyPromptingWorkflow
 from core.prompting_techniques.d_chain_of_thought_prompts.d_d_tree_of_thought_prompting import TreeOfThoughtPromptingState, TreeOfThoughtPromptingWorkflow
 
-class   WorflowFactory:
+class WorkflowFactory:
     def __init__(self, model):
-        print('model in factory: ', model)
         self.workflow_factory = {
             "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState, model=model),
             "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState, model=model),
