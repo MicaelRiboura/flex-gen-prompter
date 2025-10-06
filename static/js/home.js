@@ -39,7 +39,7 @@ function renderBarChart(data) {
                     { value: data?.chain_of_thought ? data.chain_of_thought * 100 : 0, itemStyle: { color: '#00F2CE' } },
                     { value: data?.generate_knowledge ? data.generate_knowledge * 100 : 0, itemStyle: { color: '#023C4C' } },
                     { value: data?.self_consistency ? data.self_consistency * 100 : 0, itemStyle: { color: '#077897' } },
-                    { value: data?.tree_of_thoghts ? data.tree_of_thoghts * 100 : 0, itemStyle: { color: '#008DF2' } },
+                    { value: data?.tree_of_thoughts ? data.tree_of_thoughts * 100 : 0, itemStyle: { color: '#008DF2' } },
                 ],
                 type: 'bar',
                 showBackground: true,
