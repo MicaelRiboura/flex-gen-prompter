@@ -1,36 +1,40 @@
 from langgraph.graph import END
 from core.prompting_techniques.builder import WorkflowBuilder
-from .nodes import ThoughtProposerNode, EvaluatorNode, SolverNode
+from .nodes import ExpandNode, EvaluateNode, PruneNode
 
 class TreeOfThoughtPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state, model):
+    def __init__(self, state, model, dataset_name):
         super().__init__(state, model)
-        self.min_score = 8
+        self.limit_depth = 1
+        self.limit_breadth = 5
+        self.n_evaluate = 5
+        self.n_select = 2
+        self.dataset_name = dataset_name
 
-    def evaluate_and_select(self, state):
-        deep_thoughts_count = state.get("deep_thoughts_count", 0)
-        if (state["evaluation"] >= self.min_score and state['thoughts'][-1].startswith("The final step is")) or deep_thoughts_count == 20:
-            return "solve"
+    def should_continue(self, state):
+        depth: int = state.get('depth', 0)
+        if depth < self.limit_depth:
+            return "expand"
         else:
-            return "propose"
+            return END
 
     def run(self, prompt):
         super().__init__(self.state, self.model)
         
-        self.add_node("proposer", ThoughtProposerNode(model=self.model).invoke)
-        self.add_node("evaluator", EvaluatorNode(model=self.model, min_score=self.min_score).invoke)
-        self.add_node("solver", SolverNode(model=self.model).invoke)
-        self.set_entry_point("proposer")
-        self.add_edge("proposer", "evaluator")
+        self.add_node("expand", ExpandNode(model=self.model, limit_breadth=self.limit_breadth, dataset_name=self.dataset_name).invoke)
+        self.add_node("evaluate", EvaluateNode(model=self.model, n_evaluate=self.n_evaluate, dataset_name=self.dataset_name).invoke)
+        self.add_node("prune", PruneNode(model=self.model, n_select=self.n_select, limit_depth=self.limit_depth, dataset_name=self.dataset_name).invoke)
+        self.set_entry_point("expand")
+        self.add_edge("expand", "evaluate")
+        self.add_edge("evaluate", "prune")
         self.add_conditional_edge(
-            "evaluator",
-            self.evaluate_and_select,
+            "prune",
+            self.should_continue,
             {
-                "propose": "proposer",
-                "solve": "solver",
+                "expand",
+                END,
             },
         )
-        self.add_edge("solver", END)
         app = self.compile(save_in="d_d_tree_of_thought_prompting_graph.png")
-        result = app.invoke({"prompt": prompt}, {"recursion_limit": 100})
+        result = app.invoke({"problem": prompt}, {"recursion_limit": 100})
         return result
