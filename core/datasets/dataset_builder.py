@@ -1,12 +1,14 @@
 from .gsm8k_dataset import GSM8KDataset
 from .csqa_dataset import CSQADataset
+from .ecommerce_cls_dataset import EcommerceClassificationDataset
 
 class DatasetBuilder:
     def __init__(self, dataset_name=None):
         self.dataset_name = dataset_name
         self.dataset_factory = {
             "gsm8k": GSM8KDataset,
-            "csqa": CSQADataset
+            "csqa": CSQADataset,
+            "ecommerce_classification": EcommerceClassificationDataset
         }
 
     def build(self):
