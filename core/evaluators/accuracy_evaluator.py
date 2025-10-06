@@ -15,8 +15,8 @@ class AccuracyEvaluator:
     def extract_answer(self, output):
         print(f'output: {output}')
         answer = output.replace(",", "")
-        answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
-        answer = answer[0] if len(answer) > 0 else ""
+        # answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
+        # answer = answer[0] if len(answer) > 0 else ""
         return answer
 
     def compute_accuracy(self, preds, gts):
@@ -61,7 +61,7 @@ class AccuracyEvaluator:
                     break
                 
                 label = data['label']
-                labels.append(label)
+                labels.append(label.lower())
                 
                 input_text = data['content']
 

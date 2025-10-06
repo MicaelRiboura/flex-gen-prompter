@@ -11,14 +11,37 @@ class ExpandNode(BaseNode):
     def __init__(self, model, limit_breadth, dataset_name):
         super().__init__(model, temperature=0.7)
         self.limit_breadth = limit_breadth
-        self.dataset_prompts_map: dict = {
+        self.dataset_name = dataset_name
+        self.prompting_map: dict = {
             'gsm8k': """
                 Answer the following question: {problem}
                 Make a strategy then write. Your output should be of the following format:
                 Strategy:
+                {strategy}
                 Your strategy about how to answer the question.
                 Answer:
                 Your answer to the question. It should end with "the answer is n" where n is a number.
+            """,
+            'ecommerce_classification': """
+                You are an AI assistant and you are very good at doing ecommerce products classification.
+                You are going to help a customer to classify the products in the ecommerce website.
+                Based on the context bellow:
+                Product Description:
+                {problem}
+                Strategy:
+                Your strategy about how to classify the product based on product description enumerated step-by-step.
+                {strategy}
+                
+                Complete with only the next strategic and concise step to classify this product description. 
+                Your output should be of the following format:
+                i (where i is a number). Description of step.
+                If you think that the last step of strategy is the last one, add to this sentence the answer.
+                You are only allowed to choose one of the following 4 categories:
+                - Household
+                - Books
+                - Clothing & Accessories 
+                - Electronics
+                It should end with "The answer is c", where c is the name of one of the 4 categories above.
             """
         }
 
@@ -34,12 +57,17 @@ class ExpandNode(BaseNode):
     def invoke(self, state) -> TreeOfThoughtPromptingState:
         problem: str = state.get('problem', '').replace('\nPlease output your answer at the end as ##<your answer (arabic numerals)>', '')
         candidates: List[str] = state.get('candidates', [''])
-        prompt: str = self.dataset_prompts_map['gsm8k'].format(problem=problem)
+        steps: List[str] = state.get('steps', [''])
+        steps_str = '\n'.join(steps) if len(steps) > 0 else 'No steps yet.'
+        prompt: str = self.prompting_map[self.dataset_name].format(problem=problem, strategy=steps_str)
         graph: dict = state.get('G', {})
 
         # Adiciona o problema no grafo
         if len(graph) == 0:
             graph[problem] = []
+        
+        if len(graph) == 1:
+            graph[problem] = candidates
 
         new_candidates = []
         for candidate in candidates:
@@ -72,12 +100,24 @@ class EvaluateNode(BaseNode):
     def __init__(self, model, n_evaluate, dataset_name):
         super().__init__(model, temperature=0.7)
         self.n_evaluate = n_evaluate
-        self.dataset_prompts_map = {
+        self.dataset_name = dataset_name
+        self.prompting_map = {
             'gsm8k': """
                 Given an instruction and several choices,
                 decide which choice is most promising.
                 Analyze each choice in detail, then conclude in the last line
                 "The best choice is {s}", where s the integer id of the choice.
+            """,
+            'ecommerce_classification': """
+                Product Description:
+                {problem}
+                Strategy:
+                Your strategy about how to classify the product based on product description enumerated step-by-step.
+                {strategy}
+                Based on the product description, current strategic steps above and the several choices bellow,
+                decide which choice is most promising to complete this strategy.
+                Analyze each choice in detail, then conclude in the last line
+                "The best choice is s", where s the integer id of the choice.
             """
         }
 
@@ -105,7 +145,10 @@ class EvaluateNode(BaseNode):
         
     def invoke(self, state) -> TreeOfThoughtPromptingState:
         candidates: List[str] = state.get('candidates', [])
-        prompt = self.dataset_prompts_map['gsm8k']
+        problem: str = state.get('problem', '').replace('\nPlease output your answer at the end as ##<your answer (arabic numerals)>', '')
+        steps: List[str] = state.get('steps', [''])
+        steps_str = '\n'.join(steps)
+        prompt = self.prompting_map[self.dataset_name].format(problem=problem, strategy=steps_str)
 
         # Adiciona escolhas dos candidatos no prompt
         for i, candidate in enumerate(candidates, 1):
@@ -132,6 +175,7 @@ class PruneNode(BaseNode):
         values = state.get('values', [])
         candidates = state.get('candidates', [])
         depth: int = state.get('depth', 0)
+        steps: List[str] = state.get('steps', [''])
 
         ps = np.array(values, dtype=np.float64) / sum(values)
 
@@ -147,8 +191,10 @@ class PruneNode(BaseNode):
         print('PruneNode::candidates_selected: ', select_new_candidates)
         print('PruneNode::depth: ', depth)
         
-        new_state = {'candidates': select_new_candidates, 'depth': depth + 1 }
-
+        steps.append(select_new_candidates[0])
+        
+        new_state = {'candidates': select_new_candidates, 'depth': depth + 1, 'steps': steps }
+        
         if depth == self.limit_depth - 1:
             new_state['answer'] = select_new_candidates[0].lower()\
                 .replace('the answer is ', '##')\

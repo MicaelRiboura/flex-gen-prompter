@@ -1,0 +1,109 @@
+digraph ExplicitIDsTree {
+	node [fillcolor=white fontsize=14 shape=box style="rounded,filled" width=2]
+	n0 [label="
+Desire, Discord and Death: Approaches to the Ancient near Eastern Myth (Asor
+Books) About the Author Neal Walls is Associate Professor of Old Testament
+Interpretation at Wake Forest University. A scholar of the Hebrew Bible/Old
+Testament and related ancient Near Eastern texts, Walls is fascinated by the
+breadth, depth, and complexity of Old Testament literature. He enjoys helping
+students to become skillful interpreters of scripture, to appreciate the
+diversity of theological perspectives within the canon, and to reclaim the Old
+Testament's abundant theological imagination for the church's ministries today.
+Walls also leads pilgrimages and travel programs to Africa and the Middle East.
+"]
+	n1 [label="1. Identify keywords in the product description that indicate the nature of the
+item (e.g., \"Author\", \"Interpretation\", \"Old Testament\", \"Books\", \"ASOR
+Books\"). The answer is Books."]
+	n0 -> n1
+	n2 [label="1. Analyze the product description to identify keywords and subject matter that
+indicate the primary function or category of the item (e.g., references to
+\"book,\" \"author,\" \"scholar,\" \"literature,\" and \"interpretation\"
+suggest it is a publication). This is the last step. The answer is Books."]
+	n0 -> n2
+	n3 [label="2. Match the identified keywords and subject matter with the most relevant
+category from the provided options to ensure accurate classification. This is
+the last step. The answer is Books."]
+	n2 -> n3
+	n4 [label="3. Confirm that the identified category aligns with the product’s core purpose
+and the available classification options to finalize the categorization. This is
+the last step. The answer is Books."]
+	n3 -> n4
+	n5 [label="3. Assign the product to the selected category based on the analysis and keyword
+matching. This is the last step. The answer is Books."]
+	n3 -> n5
+	n6 [label="3. Confirm that \"Books\" is the most appropriate category based on the analysis
+of the product description and the provided options. This is the last step. The
+answer is Books."]
+	n3 -> n6
+	n7 [label="3. Confirm that the product fits within the selected category based on its
+primary purpose and content as described. This is the last step. The answer is
+Books."]
+	n3 -> n7
+	n8 [label="3. Confirm the classification by ensuring that the product's content and context
+align exclusively with the selected category among the available options. This
+is the last step. The answer is Books."]
+	n3 -> n8
+	n9 [label="4. Finalize the classification by assigning the product to the \"Books\"
+category based on its description as a scholarly publication. This is the last
+step. The answer is Books."]
+	n8 -> n9
+	n10 [label="4. Finalize the classification by assigning the product to the \"Books\"
+category, as all indicators in the description confirm it is a publication. This
+is the last step. The answer is Books."]
+	n8 -> n10
+	n11 [label="4. Finalize the classification by selecting \"Books\" as the category since the
+product is a publication authored by a scholar and centered on academic
+literature. The answer is Books."]
+	n8 -> n11
+	n12 [label="4. Finalize the classification by assigning the product to the \"Books\"
+category, as all evidence from the description supports this selection. This is
+the last step. The answer is Books."]
+	n8 -> n12
+	n13 [label="5. Confirm that no further steps are necessary, as the product has been
+conclusively classified based on the provided strategy. The answer is Books."]
+	n12 -> n13
+	n14 [label="5. Confirm that no further steps are needed, as the classification is complete
+and justified based on the product description. The answer is Books."]
+	n12 -> n14
+	n12 -> n12 [style=dashed]
+	n15 [label="5. The classification process is complete since all steps confirm that the
+product fits within the \"Books\" category. The answer is Books."]
+	n12 -> n15
+	n16 [label="5. Conclude the process by confirming that \"Books\" is the most appropriate
+category for this product based on its description and context. This is the last
+step. The answer is Books."]
+	n12 -> n16
+	n17 [label="4. Finalize the classification by assigning the product to the \"Books\"
+category, as all evidence from the description points to it being a publication.
+This is the last step. The answer is Books."]
+	n8 -> n17
+	n18 [label="2. Match the identified keywords and subject matter to the most relevant
+category from the provided list to ensure accurate classification. This is the
+last step. The answer is Books."]
+	n2 -> n18
+	n19 [label="2. Match the identified keywords and subject matter to the most relevant
+category from the provided options to ensure accurate classification. This is
+the last step. The answer is Books."]
+	n2 -> n19
+	n20 [label="2. Based on the identification of keywords and subject matter, match the product
+to one of the predefined categories (Household, Books, Clothing & Accessories,
+Electronics). This is the last step. The answer is Books."]
+	n2 -> n20
+	n21 [label="2. Match the identified keywords and subject matter to the provided category
+options to determine the best fit. This is the last step. The answer is Books."]
+	n2 -> n21
+	n22 [label="1. Identify keywords in the product description that indicate the nature of the
+item, such as \"Approaches to the Ancient near Eastern Myth,\" \"Asor Books,\"
+\"About the Author,\" and references to scholarship and teaching. The answer is
+Books."]
+	n0 -> n22
+	n23 [label="1. Identify keywords in the product description that indicate the type of
+product, such as \"Asor Books,\" \"About the Author,\" and references to the
+author’s academic background and subject matter expertise. The answer is Books."]
+	n0 -> n23
+	n24 [label="1. Identify keywords and phrases in the product description that indicate the
+nature of the item (e.g., \"About the Author,\" \"Associate Professor,\" \"Old
+Testament,\" \"literature,\" and \"Asor Books\") to determine if the product is
+a book or related to academic study. The answer is Books."]
+	n0 -> n24
+}

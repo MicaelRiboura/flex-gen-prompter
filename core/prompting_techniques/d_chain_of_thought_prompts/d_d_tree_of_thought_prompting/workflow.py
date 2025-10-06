@@ -5,10 +5,10 @@ from .nodes import ExpandNode, EvaluateNode, PruneNode
 class TreeOfThoughtPromptingWorkflow(WorkflowBuilder):
     def __init__(self, state, model, dataset_name):
         super().__init__(state, model)
-        self.limit_depth = 1
+        self.limit_depth = 5
         self.limit_breadth = 5
         self.n_evaluate = 5
-        self.n_select = 2
+        self.n_select = 1
         self.dataset_name = dataset_name
 
     def should_continue(self, state):

@@ -5,4 +5,5 @@ class TreeOfThoughtPromptingState(TypedDict):
     values: List[int]
     answer: str | None = None
     depth: int = 0
+    steps: List[str] = ['']
     G: dict
