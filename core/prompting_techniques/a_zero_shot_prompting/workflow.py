@@ -4,12 +4,13 @@ from .nodes import AnswerNode
 
 
 class ZeroShotPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state, model):
+    def __init__(self, state, model, dataset_name):
         super().__init__(state, model)
+        self.dataset_name = dataset_name
 
     def run(self, prompt):
         super().__init__(self.state, self.model)
-        self.add_node("answer", AnswerNode(model=self.model).invoke)
+        self.add_node("answer", AnswerNode(model=self.model, dataset_name=self.dataset_name).invoke)
         self.set_entry_point("answer")
         self.add_edge("answer", END)
         app = self.compile(save_in="a_zero_shot_prompting_graph.png")

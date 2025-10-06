@@ -2,7 +2,7 @@ from core.prompting_techniques.base_node import BaseNode
 from core.prompting_techniques.a_zero_shot_prompting.state import ZeroShotPromptingState
 
 class AnswerNode(BaseNode):
-    def __init__(self, model):
+    def __init__(self, model, dataset_name):
         super().__init__(model)
     
     def invoke(self, state) -> ZeroShotPromptingState:

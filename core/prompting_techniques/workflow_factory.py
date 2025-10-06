@@ -6,14 +6,14 @@ from core.prompting_techniques.d_chain_of_thought_prompts.d_c_self_consistency_p
 from core.prompting_techniques.d_chain_of_thought_prompts.d_d_tree_of_thought_prompting import TreeOfThoughtPromptingState, TreeOfThoughtPromptingWorkflow
 
 class WorkflowFactory:
-    def __init__(self, model):
+    def __init__(self, model, dataset_name=None):
         self.workflow_factory = {
-            "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState, model=model),
-            "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState, model=model),
-            "chain_of_thought": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState, model=model),
-            "generate_knowledge": GenerateKnowledgePromptingWorkflow(state=GenerateKnowledgePromptingState, model=model),
-            "self_consistency": SelfConsistencyPromptingWorkflow(state=SelfConsistencyPromptingState, model=model),
-            "tree_of_thoughts": TreeOfThoughtPromptingWorkflow(state=TreeOfThoughtPromptingState, model=model)
+            "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState, model=model, dataset_name=dataset_name),
+            "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState, model=model, dataset_name=dataset_name),
+            "chain_of_thought": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState, model=model, dataset_name=dataset_name),
+            "generate_knowledge": GenerateKnowledgePromptingWorkflow(state=GenerateKnowledgePromptingState, model=model, dataset_name=dataset_name),
+            "self_consistency": SelfConsistencyPromptingWorkflow(state=SelfConsistencyPromptingState, model=model, dataset_name=dataset_name),
+            "tree_of_thoughts": TreeOfThoughtPromptingWorkflow(state=TreeOfThoughtPromptingState, model=model, dataset_name=dataset_name)
         }
 
     def create_workflow(self, workflow_type: str):

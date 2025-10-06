@@ -5,7 +5,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 class FewShotAnswerNode(BaseNode):
 
-    def __init__(self, model, examples):
+    def __init__(self, model, examples, dataset_name):
         super().__init__(model)
         self.examples = examples
 

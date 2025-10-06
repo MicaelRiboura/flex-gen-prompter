@@ -1,15 +1,19 @@
 from tqdm import tqdm
 import re
 from core.prompting_techniques.workflow_factory import WorkflowFactory
+from core.services.datasets_service import DatasetsService
 
 class AccuracyEvaluator:
-    def __init__(self, dataset, model, techniques):
-        self.dataset = dataset
+    def __init__(self, dataset_name, model, techniques):
+        service = DatasetsService()
+        self.dataset_name = dataset_name
+        self.dataset = service.get_dataset(dataset_name)
         self.model = model
-        self.total = len(dataset)
+        self.total = len(self.dataset)
         self.techniques = techniques
 
     def extract_answer(self, output):
+        print(f'output: {output}')
         answer = output.replace(",", "")
         answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
         answer = answer[0] if len(answer) > 0 else ""
@@ -48,7 +52,7 @@ class AccuracyEvaluator:
         self.total = self.total * len(self.techniques)
         steps = 0
         for technique in self.techniques:
-            workflow = WorkflowFactory(model=self.model).create_workflow(technique)
+            workflow = WorkflowFactory(model=self.model, dataset_name=self.dataset_name).create_workflow(technique)
 
             preds = []
             labels = []
@@ -83,7 +87,7 @@ class AccuracyEvaluator:
                 res = re.findall(r'##(.*)', output['answer'])
                 pred = res[0] if res else output['answer']
                 pred = self.extract_answer(pred)
-                # print('pred: ', pred, ' | label: ', label)
+
                 preds.append(pred)
                 steps += 1
             

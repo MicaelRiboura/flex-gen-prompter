@@ -8,7 +8,7 @@ import json
 import os
 
 class AnswersGeneratorNode(BaseNode):
-    def __init__(self, model):
+    def __init__(self, model, dataset_name):
         super().__init__(model)
 
     def invoke(self, state) -> SelfConsistencyPromptingState:
@@ -22,7 +22,7 @@ class AnswersGeneratorNode(BaseNode):
         
 class AggregatorAndEvaluatorNode(BaseNode):
 
-    def __init__(self, model):
+    def __init__(self, model, dataset_name):
         super().__init__(model)
         self.FILE_PATH = 'thoughts_graph/self_consistency_thoughts_graph.json'
         

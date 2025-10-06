@@ -44,10 +44,7 @@ def start_evaluation(request):
     print('request.POST.techniques: ', techniques)
     print('request.POST.sample: ', sample)
 
-    service = DatasetsService()
-    dataset = service.get_dataset(dataset_name)
-
-    task = evaluate_workflows.delay(model, dataset, techniques, sample)
+    task = evaluate_workflows.delay(model, dataset_name, techniques, sample)
 
     return JsonResponse({
         'message': 'Seu processamento foi iniciado! Você será notificado quando terminar.',

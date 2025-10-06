@@ -2,7 +2,7 @@ from core.prompting_techniques.base_node import BaseNode
 from .state import GenerateKnowledgePromptingState
 
 class KnowledgeGeneratorNode(BaseNode):
-    def __init__(self, model):
+    def __init__(self, model, dataset_name):
         super().__init__(model)
     
     def invoke(self, _state) -> GenerateKnowledgePromptingState:
@@ -12,7 +12,7 @@ class KnowledgeGeneratorNode(BaseNode):
         return { 'knowledge': answer }
         
 class AnswerNode(BaseNode):
-    def __init__(self, model):
+    def __init__(self, model, dataset_name):
         super().__init__(model)
     
     def invoke(self, state) -> GenerateKnowledgePromptingState:

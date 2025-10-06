@@ -6,9 +6,10 @@ import re
 
 
 class SelfConsistencyPromptingWorkflow(WorkflowBuilder):
-    def __init__(self, state, model, num_responses=5):
+    def __init__(self, state, model, dataset_name, num_responses=5):
         super().__init__(state, model)
         self.num_responses = num_responses
+        self.dataset_name = dataset_name
 
     def should_continue(self, state):
         final_answers = []
@@ -31,8 +32,8 @@ class SelfConsistencyPromptingWorkflow(WorkflowBuilder):
     def run(self, prompt):
         super().__init__(self.state, self.model)
         
-        self.add_node("answers_generator", AnswersGeneratorNode(model=self.model).invoke)
-        self.add_node("aggregator_and_evaluator", AggregatorAndEvaluatorNode(model=self.model).invoke)
+        self.add_node("answers_generator", AnswersGeneratorNode(model=self.model, dataset_name=self.dataset_name).invoke)
+        self.add_node("aggregator_and_evaluator", AggregatorAndEvaluatorNode(model=self.model, dataset_name=self.dataset_name).invoke)
         self.set_entry_point("answers_generator")
         self.add_conditional_edge(
             "answers_generator",
