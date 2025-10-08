@@ -6,6 +6,11 @@ from .tasks import evaluate_workflows
 from celery.result import AsyncResult
 from django.views.decorators.http import require_POST
 from core.prompting_techniques.workflow_factory import WorkflowFactory
+import os
+from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+from core.models import Dataset
+import pandas as pd
 
 # Create your views here.
 def home(request):
@@ -17,12 +22,25 @@ def home(request):
 
 def datasets(request):
     service = DatasetsService()
+    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
     datasets = service.list_datasets()
+    datasets.extend(custom_datasets)
     return render(request, 'datasets.html', {'datasets': datasets})
 
 def get_dataset_details(request, dataset_name):
     service = DatasetsService()
-    dataset = service.get_dataset(dataset_name)
+    if dataset_name in service.list_datasets():
+        dataset = service.get_dataset(dataset_name)
+    else:
+        dataset = []
+        dataset_object = Dataset.objects.filter(name=dataset_name).first()
+        if dataset_object:
+            df = pd.read_csv(f'media/uploads/{dataset_object.filename}')
+            for i, row in df.iterrows():
+                content = row['content']
+                label = row['label']
+                dataset.append({ 'content': content, 'label': label })
+                
 
     page_number = request.GET.get('page', 1)
     paginator = Paginator(dataset, 10)  # Show 10 records per page
@@ -85,3 +103,32 @@ def check_evaluation_status(request, task_id):
     # Para outros estados como PENDING, a resposta padrão já serve.
 
     return JsonResponse(response_data)
+
+
+@csrf_exempt  # For simplicity, better use proper CSRF in production
+def upload_dataset_csv(request):
+    if request.method == 'POST' and request.FILES.get('file'):
+        file = request.FILES['file']
+
+        # Create folder if not exists
+        upload_dir = os.path.join(settings.MEDIA_ROOT, 'uploads')
+        os.makedirs(upload_dir, exist_ok=True)
+
+        # Save file
+        file_path = os.path.join(upload_dir, file.name)
+        with open(file_path, 'wb+') as destination:
+            for chunk in file.chunks():
+                destination.write(chunk)
+                
+        dataset_name = file.name.replace('.csv', '')
+        if Dataset.objects.filter(name=dataset_name).count() > 0:
+            return JsonResponse({'message': 'Dataset editado com sucesso!', 'filename': file.name})
+        
+        Dataset.objects.create(
+            name=dataset_name, 
+            filename=file.name
+        )
+
+        return JsonResponse({'message': 'Dataset carregado com sucesso!', 'filename': file.name})
+
+    return JsonResponse({'error': 'Invalid request'}, status=400)
