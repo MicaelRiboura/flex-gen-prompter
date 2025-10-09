@@ -16,14 +16,16 @@ import pandas as pd
 def home(request):
     service = DatasetsService()
     datasets = service.list_datasets()
+    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
+    datasets.extend(custom_datasets)
     techniques = WorkflowFactory(model=None).workflow_factory.keys()
     return render(request, 'home.html', {'datasets': datasets, 'techniques': techniques })
 
 
 def datasets(request):
     service = DatasetsService()
-    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
     datasets = service.list_datasets()
+    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
     datasets.extend(custom_datasets)
     return render(request, 'datasets.html', {'datasets': datasets})
 

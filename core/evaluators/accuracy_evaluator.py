@@ -14,7 +14,7 @@ class AccuracyEvaluator:
 
     def extract_answer(self, output):
         print(f'output: {output}')
-        answer = output.replace(",", "")
+        answer = output
         # answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
         # answer = answer[0] if len(answer) > 0 else ""
         return answer

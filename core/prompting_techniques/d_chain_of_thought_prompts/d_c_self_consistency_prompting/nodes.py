@@ -10,9 +10,16 @@ import os
 class AnswersGeneratorNode(BaseNode):
     def __init__(self, model, dataset_name):
         super().__init__(model)
+        self.dataset_name = dataset_name
+        self.prompting_map = {
+            'gsm8k': """
+                You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.\n\n{prompt}
+            """,
+        }
 
     def invoke(self, state) -> SelfConsistencyPromptingState:
-        prompt = f'You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.\n\n{state['prompt']}'
+        prompt = self.prompting_map\
+            .get(self.dataset_name).format(prompt=state['prompt'])
         chain = PromptTemplate.from_template(prompt) | self.model | StrOutputParser()
         responses = []
         for _ in range(state.get('num_responses', 5)):
