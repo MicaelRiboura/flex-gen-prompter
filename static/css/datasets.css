@@ -1,0 +1,48 @@
+h2 {
+    margin-bottom: 20px;
+}
+
+.dropzone {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #6c63ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    transition: background 0.2s ease;
+    cursor: pointer;
+}
+
+.dropzone.dragover {
+    background: #e6e4ff;
+    border-color: #4338ca;
+}
+
+.dropzone p {
+    pointer-events: none;
+}
+
+#progress {
+    margin-top: 15px;
+    width: 400px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+}
+
+#progress div {
+    height: 100%;
+    width: 0;
+    background: #6c63ff;
+    transition: width 0.3s ease;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
