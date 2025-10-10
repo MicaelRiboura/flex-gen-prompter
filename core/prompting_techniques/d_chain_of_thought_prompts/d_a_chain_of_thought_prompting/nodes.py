@@ -7,7 +7,11 @@ class AnswerNode(BaseNode):
         self.dataset_name = dataset_name
         self.prompting_map = {
             'gsm8k': """
-                You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.\n\n {prompt}
+                You are expert mathematician in solving logical reasoning problems. Solve the following problem by thinking step-by-step.
+                
+                {prompt}
+                
+                Please output your answer at the end as ##<your answer (arabic numerals)>
             """,
             'ecommerce_classification': """
                 You are an AI assistant and you are very good at doing ecommerce products classification.

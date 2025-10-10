@@ -20,7 +20,7 @@ class ExpandNode(BaseNode):
                 {strategy}
                 Your strategy about how to answer the question.
                 Answer:
-                Your answer to the question. It should end with "the answer is n" where n is a number.
+                Your answer to the question. It should end in this format: "the answer is ##n" where n is a number. Please, keep '##' symbol.
             """,
             'ecommerce_classification': """
                 You are an AI assistant and you are very good at doing ecommerce products classification.
@@ -41,8 +41,8 @@ class ExpandNode(BaseNode):
                 - Books
                 - Clothing & Accessories 
                 - Electronics
-                It should end with "The answer is c", where c is the name of one of the 4 categories above.
-            """
+                It should end with "The answer is ##c", where c is the name of one of the 4 categories above. Please, keep '##' symbol.
+            """,
         }
 
     def get_samples(self, prompt, candidate, n_generate_sample, graph):
@@ -55,7 +55,7 @@ class ExpandNode(BaseNode):
         return samples
 
     def invoke(self, state) -> TreeOfThoughtPromptingState:
-        problem: str = state.get('problem', '').replace('\nPlease output your answer at the end as ##<your answer (arabic numerals)>', '')
+        problem: str = state.get('problem', '')
         candidates: List[str] = state.get('candidates', [''])
         steps: List[str] = state.get('steps', [''])
         steps_str = '\n'.join(steps) if len(steps) > 0 else 'No steps yet.'
@@ -106,7 +106,7 @@ class EvaluateNode(BaseNode):
                 Given an instruction and several choices,
                 decide which choice is most promising.
                 Analyze each choice in detail, then conclude in the last line
-                "The best choice is {s}", where s the integer id of the choice.
+                "The best choice is s", where s the integer id of the choice.
             """,
             'ecommerce_classification': """
                 Product Description:
@@ -118,7 +118,7 @@ class EvaluateNode(BaseNode):
                 decide which choice is most promising to complete this strategy.
                 Analyze each choice in detail, then conclude in the last line
                 "The best choice is s", where s the integer id of the choice.
-            """
+            """,
         }
 
     def count_votes(self, vote_outputs, n_candidates):
@@ -145,7 +145,7 @@ class EvaluateNode(BaseNode):
         
     def invoke(self, state) -> TreeOfThoughtPromptingState:
         candidates: List[str] = state.get('candidates', [])
-        problem: str = state.get('problem', '').replace('\nPlease output your answer at the end as ##<your answer (arabic numerals)>', '')
+        problem: str = state.get('problem', '')
         steps: List[str] = state.get('steps', [''])
         steps_str = '\n'.join(steps)
         prompt = self.prompting_map[self.dataset_name].format(problem=problem, strategy=steps_str)
@@ -196,8 +196,7 @@ class PruneNode(BaseNode):
         new_state = {'candidates': select_new_candidates, 'depth': depth + 1, 'steps': steps }
         
         if depth == self.limit_depth - 1:
-            new_state['answer'] = select_new_candidates[0].lower()\
-                .replace('the answer is ', '##')\
+            new_state['answer'] = select_new_candidates[0]\
                 .replace('.', '')
             print(f'state: {new_state}')
         

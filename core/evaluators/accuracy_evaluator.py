@@ -14,7 +14,7 @@ class AccuracyEvaluator:
 
     def extract_answer(self, output):
         print(f'output: {output}')
-        answer = output
+        answer = output.replace('.', '')
         # answer = [s for s in re.findall(r'-?\d+\.?\d*', answer)]
         # answer = answer[0] if len(answer) > 0 else ""
         return answer
@@ -72,17 +72,17 @@ class AccuracyEvaluator:
                         'total': num_samples * len(self.techniques) if num_samples and num_samples <= self.total else self.total
                     }
                 )
-                try:
-                    if len(examples) > 0:
-                        output = workflow.run(prompt=f'{input_text}\nPlease output your answer at the end as ##<your answer (arabic numerals)>', examples=examples)
-                    else:
-                        output = workflow.run(prompt=f'{input_text}\nPlease output your answer at the end as ##<your answer (arabic numerals)>')
+                # try:
+                if len(examples) > 0:
+                    output = workflow.run(prompt=f'{input_text}', examples=examples)
+                else:
+                    output = workflow.run(prompt=f'{input_text}')
                     # save_tree_thoughts_graph(output.get("G", {}), filename=f"thoughts_graph/tree_of_thoughts_graph{i}.png")
-                except Exception as e:
-                    print(f"Error processing data index {i}: {e}")
-                    print(e)
-                    preds.append("Error")
-                    continue
+                # except Exception as e:
+                #     print(f"Error processing data index {i}: {e}")
+                #     print(e)
+                #     preds.append("Error")
+                #     continue
 
                 res = re.findall(r'##(.*)', output['answer'])
                 pred = res[0] if res else output['answer']

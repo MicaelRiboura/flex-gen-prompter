@@ -4,7 +4,7 @@ import os
 
 class BaseNode:
     def __init__(self, model, temperature=0.3):
-        if 'azure' in os.getenv('OPENAI_BASE_URL'):
+        if 'azure' in os.getenv('OPENAI_BASE_URL', ''):
             self.model = AzureChatOpenAI(
                 model=os.getenv('DEPLOYMENT_NAME', default='test'),
                 openai_api_key=os.getenv('OPENAI_API_KEY', default='test'),
