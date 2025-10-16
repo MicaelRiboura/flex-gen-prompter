@@ -1,0 +1,895 @@
+,content,label
+0,"Observação de desprendimento de bolhas de material escuro pela interface entre o tree manifold da ANM 
+do MRL-024 e a capa de corrosão instalada no equipamento (RS JGMRL21-042). Mobilização de instrumento de coleta de fluido desprendido sob a forma de bolhas; 
+• •  Observado que o fluxo não é contínuo e/ou constante, ocorrendo com periodicidade irregular/ variável e 
+com bolhas apresentando tamanhos variados. Durante a aproximação do ROV, com o incremento dos thrusters, foram desprendidas aproximadamente 
+100 bolhas de resíduo escuro que estavam acumuladas na região da face 3. Nº bolhas  Observações 
+08/02/2021 - 03:23:00  08/02/2020 - 03:26:00  37 Período de maior fluxo observado 
+08/02/2021 - 12:38:00  08/02/2020 - 12:58:00  4  - 
+08/02/2021 - 21:15:00  08/02/2020 - 21:20:00  72  Maior bolha registrada 
+08/02/2021 - 23:30:00  08/02/2020 - 24:00:00  18  - 
+09/02/2021 - 01:02:00  09/02/2020 - 01:10:00  6  - 
+11/02/2021 – 10:22:00  11/02/2021 – 10:25:40  ~100  Bolhas assimétricas 
+ 
+   
+Foto 7: Ponto principal de escape de bolhas durante o 
+corrosão e o funil da ANM  monitoramento Foto 9: Escape de fluido no período de maior fluxo    Foto 10: Registro da maior bolha observada durante o 
+RS JGMRL21-042  monitoramento  
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA  FISCALIZAÇÃO  
+EMISSÃO DO DOCUMENTO Com o intuito de analisar o tipo de fluido corrente, a equipe de ROV do Joe Griffin adaptou um instrumento 
+capaz de coletar o material acumulado na base da capa de corrosão, desprendido e liberado em forma de 
+bolhas, e um coletor que, por fricção, acumulasse o material aderido ao funil da ANM. •  Não foi possível coletar material fluido desprendido sob a forma de bolhas, pois parece que a liberação do 
+fluxo se deu somente após a aproximação do ROV durante a inspeção visual, escopo do RS JGMRL21-042 
+e em alguns momentos esporádicos quando o coletor não estava posicionado. CONCLUSÃO 
+•  Realizada inspeção em busca de danos e vazamentos na ANM do poço 7-MRL-24D-RJS em complemento 
+ao relatório JGMRL21-042, considerando os padrões, procedimentos e instruções da PETROBRAS e do 
+suporte técnico da EQSB remoto; 
+•  Observado acúmulo de material escuro na parte inferior da capa de corrosão instalada no tree manifold da 
+ANM; 
+•  Não foi possível coletar material líquido com o mecanismo desenvolvido, considerando a periodicidade das 
+ocorrências das bolhas desprendidas do local; As bolhas que escapam entre a capa de corrosão e o funil da ANM possuem tamanhos assimétricos, fluxo 
+variado e ocorrem com periodicidade irregular; 
+•  Coletada amostra de material que estava à estrutura aaderido baixo da capa de corrosão, junto ao tree 
+manifold da ANM. Observado escape de bolhas na 
+(H)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+1,"04 
+ 
+OPERAÇÕES REALIZADAS: 
+  Realizado contato com a P-55 para verificação de injeção de N2 no bloco da ANM por parte da Unidade, para 
+facilitar a identificação de possíveis pontos de escape de bolhas. Situação confirmada pela Sala de Controles 
+da plataforma; 
+  Realizado inspeção e status de válvulas dos painéis das faces 1 a 4 do conjunto ANM; 
+  Realizado inspeção dos indicadores de travamento dos equipamentos e subequipamentos das faces 1 a 4 do 
+conjunto ANM; 
+  Realizada inspeção em todo o conjunto da ANM (faces 1 a 4) em busca de escape de bolhas; 
+  Retorno do ROV ao convés e posterior retorno ao poço a pedido da UEP, afim de realizar novo monitoramento, 
+devido necessidade de manobras pela Unidade;  
+  Identificado acúmulo de fluido no funil da capa de corrosão da Tree Cap e funil do hub da Tree Cap; 
+  P-55 realizou a abertura da válvula XO e pressurização do jumper de GL de Etanol e Gás com 202 bar; 
+ O poço encontra-se fechado, segundo informações da Sala de Controle da P-55; 
+  P-55 informou ter pressurizado N2 com 270 bar na linha de serviço do 7-RO-112HA-RJS para facilitar a possível 
+verificação de ponto de escape de bolhas; 
+ 
+CONTRATADA  FISCALIZAÇÃO ONSHORE 
+SUB/SSUB/MIS/MI-AUP 
+Luiz A. Dias  Lucia Cecilia Honório Sargento  Tadeu Kosinski 
+SISPAT: 40370527  Matr. 04 
+ 
+  Realizada inspeção e status de válvulas dos painéis das faces 1 a 4 do conjunto ANM (fotos 01 a 12); 
+  Realizada inspeção dos indicadores de travamento dos equipamentos e subequipamentos das faces 1 a 4 do 
+conjunto ANM; 
+  Realizada inspeção em todo o conjunto da ANM (faces 1 a 4) em busca de escape de bolhas; 
+  Identificado acúmulo de fluido no funil da capa de corrosão da Tree Cap e funil do hub da Tree Cap.",{'recommendations': []}
+2,"OUTROS PONTOS RELEVANTES 
+  Presença de Hidrato na válvula VD do painel do MCV-U – Face 2; 
+  Presença de Hidrato no funil da ANM – Face 2; 
+  Presença de Hidrato no spool – Face3; 
+  Presença de Hidrato Tree Cap – Face 4; 
+ 
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA  INSPETOR 
+EMISSÃO DO DOCUMENTO Presença de Hidrato na válvula  Foto 63. Presença de Hidrato no funil da 
+VD do painel do MCV-U.  ANM – Presença de Hidrato spool da 
+empenada – Face 2.  ANM – Presença de Hidrato Tree Cap –  Foto 67. Presença de Hidrato ANM – 
+Face 4 Presença de formação de hidrato na válvula VD do painel do MCV-U, no funil da ANM, no spool da ANM, 
+Tree Cap e ANM; 
+  Não foi realizado teste funcional por não estar contemplado nessa OS no Ciemsub; 
+  Não foi realizada medição de potencial eletroquímico por não obrigatoriedade do CiemSub e conforme 
+procedimento PE-2SUB-00431 – Ver.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+3,"Realizar inspeção diferenciada para identificar possível evolução de escape de gás já registrado anteriormente 
+ou identificar novos pontos de escape no  7-AB-13HA -RJS. 
+3. EM BUSCA DE ESCAPE DE GÁS Observado s 02 pontos conhecidos  de inspeções anteriores (não identificados no relatório SEab20 -051, porém 
+identificados através das foto s 7 e 8 do relatório FSGab18 -170), com escape  de bolhas de  gás migrando a 
+partir do  leito marinho no entorno do poço - Face 1 (~6 bolhas / min ), sendo realizada  a filmagem por 15 
+minutos em cada local  (Fotos 3 a 5). ✓ Observado  02 novos  pontos , com escape  de bolhas de gás migrando a partir do leito marinho no entorno do 
+poço - Face 1 (~6 bolhas / min), sendo realizada a filmagem por 15 minutos em cada local (Fotos 3, 6 e 7). Não foi observado escape de bolhas de gás migrando a partir do leito marinho no  entorno do poço - Face 1, na 
+posição identificada  anteriormente  através da foto 8 do relatório SEab20 -051, assim como através das fotos 5 e 
+6 do relatório FSGab18 -170. ✓ Observado s 02 pontos conhecidos de inspeções anteriores  (não identificados no relatório SEab20 -051, porém 
+identificados através das fotos 13 e 15 do relatório FSGab18 -170), com escape  de bolhas de  gás migrando a 
+partir do  leito marinho no entorno do poço - Face 2 (~6 bolhas / min ), sendo realizada  a filmagem por 15 
+minutos simultaneamente dos dois locais (Fotos 9 a 11). ✓ Observado  01 novo ponto, com escape  de bolhas de gás migrando a partir do leito marinho no entorno do poço 
+- Face 2 (~6 bolhas / min), sendo realizada a filmagem por 15 minutos do local (Fotos 9 e 12 ). Não foi observado escape de bolhas de gás migrando a partir do leito marinho no  entorno d o poço  e a 
+formação de hidrato - Face 2, na posição identificada através da s fotos 9 e 10  do relatório SEab20 -051, assim 
+como através da  foto 14 do relatório FSGab18 -170. Não foi observad o escape  de bolhas de gás migrando a partir do leito marinho no entorno do poço - Face 3, 
+conforme previstos nos  relatório s SEab20 -051 e FSGab18 -170 (Foto 14). Sapura Esmeralda, através da foto 12 do relatório SEab 20-051, não foi observada escape  
+de bolhas de gás migrando a partir do leito marinho no entorno do poço - Face 4, anteriormente localizada pelo 
+RSV Far Saga , através das  fotos 22 e 23 do relatório FSGab18 -170. Leito marinho a 5 m,  com escape  de bolhas de gás  – 
+Face 1. Ponto conhecido com escape  de bolhas de gás  no 
+leito marinho – Face 1. Ponto conhecido com  escape  de bolhas de gás  no 
+leito marinho  – Face 1. Novo ponto c om escape  de bolhas de gás  no leito 
+marinho – Face 1. Novo ponto com escape  de bolhas de gás  no leito 
+marinho – Face 1. Ponto conhecido sem  escape  de bolhas de gás no 
+leito marinho – Face 1. Leito marinho a 5 m, com escape  de bolhas de gás – 
+Face 2. Ponto conhecido com  escape  de bolhas de gás no 
+leito marinho – Face 2. Ponto conhecido com escape  de bolhas de gás no 
+leito marinho – Face 2. Novo ponto com escape  de bolhas de gás no leito 
+marinho – Ponto conhecido sem  escape  de bolhas de gás e 
+hidrato no leito marinho – Face 2. Leito marinho a 5 m, sem escape  de bolhas de gás 
+– Leito marinho a 5 m, sem escape  de bolhas de gás 
+– Ponto conhecido sem  escape  de bolhas de gás no 
+leito marinho – A baixa visibi lidade em decorrência de suspens ão de partículas na água  e quantidade de pontos de escape  de 
+gás no leito marinho para monitoramento  impactou  no tempo operacional. Os locais de escape  de gás no leito marinho foram comparados com os relatórios de referência ( FSGab18 -170 
+de 24/10/2018 / SEab20 -051 de 02/05/2020),  com base na similaridade dos cenários apresentados nos 
+registros fotográficos (sucatas, cabos, irregularidades no leito, etc.). CONCLUSÃO  
+• Observado um total de 04 pontos de escape  de bolhas de gás  intermitentes de baixa intensidade,  migrando a 
+partir do leito marinho no entorno do poço - Face 1 , com intensidade média de 6 bolhas / min . Não foi observad o escape  de bolhas de gás migrando a partir do leito marinho no entorno do poço - Face 1 , na 
+posição identificada anteriormente através da foto 8 do relatório SEab20 -051, assim como através das fotos 5 e 
+6 do relatório FSGab18 -170. • Observado um total de 0 3 pontos de escape  de bolhas de gás intermitentes de baixa intensidade, migrando a 
+partir do leito marinho no entorno do poço - Face 2, com intensidade média de 6 bolhas / min. Não foi observado escape de bolhas de gás migrando a partir do leito marinho no  entorno do poço  e a 
+formação de hidrato - Face 2 , na posição identificada através da s fotos 9 e 10  do relatório SEab20 -051, assim 
+como através da  foto 14 do relatório FSGab18 -170. Não foi observado escape de bolhas de gás migrando a partir do leito marinho no  entorno do poço - Face 3 , 
+conforme previstos nos  relatório s SEab20 -051 e FSGab18 -170. Sapura Esmeralda, através da foto 12 do relatório SEab20 -051, não foi observada escape  
+de bolhas de gás migrando a partir do leito marinho no entorno do poço - Face 4 , anteriormente localizada pelo 
+RSV Far Saga , através das  fotos 22 e 23  do relatório FSGab18 -170. SIM  ☐ NÃO  Escape de gás de baixa intensidade na s","{'recommendations': [{'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}]}"
+4,"  Identificado o poço 7-MRL-118H-RJS / P-35 (fotos 1 e 2); 
+  Identificado escape de bolhas oriundo da relief do atuador da válvula W2, conforme indicado na PATEC PI- Origem das bolhas. Origem das bolhas","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+5,"OBJETIVO  
+ Realizar inspeção diferenciada para verificação do estado geral de c onservação do  conjunto d a ANM do 
+poço 7-AB-21D-RJS interligado à P-25 a fim de avaliar possível escape de gás . 
+3. Foi observado exsudação  para o meio externo no leito marin ho na base da BAP, bolhas, de forma intermitente, 
+localizado através do uso de minicâmera; evento já relatado em inspeções anteriores. Conforme CiemSub, não foi requisitado Teste Funcional e Manuseio de Válvulas na Inspeção 
+Diferenciada  de Escape de Gás Cabeça de Poço [PI -CABP -EDG12] 7 -AB-21D-RJS / 7 -AB-21D-RJS / P -25","{'recommendations': [{'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}]}"
+6,"A fiscalização e o STO foram 
+informados, e decidiram prosseguir com a operação, pois uma das suspeitas na falha de atuação da M2 era de formação de hidrato nobloco da ANM. Dado prosseguido a operação, foi solicitado pela fiscalização (com STO/BR ciente e concordante), realizar bombeio de água quente via HCR, afim de dissociar possível hidrato nobloco da ANM, durante o 
+bombeio foram realizados 20 ciclos de atuação na M2 visando obter sucesso no fechamento total do atuador, porém não obtivemos sucesso.",{'recommendations': []}
+7,"-
+MV9.62492/2021 por 15 minutos, sendo observado escape contínuo de gás com baixa intensidade  com 
+média de 24 bolhas por minuto  (Foto 24) . 
+ 
+ 
+Foto 24: Escape de gás através do bonnet  da válvula PIG -XO – Face 3 
+ 
+4.7. ✓ Não foram observados danos mecânicos relevantes ; 
+✓ Monitorado ponto de escape no bonnet  da válvula PIG -XO conforme indicação d parecer técnico PI -
+ANM -MV9.62492/2021 por 15 minutos, sendo observado escape contínuo de gás com baixa intensidade 
+com média de 24 bolhas por minuto;  
+✓ ☐ NÃO  Observado escape contínuo de gás 
+com baixa intensidade com média de 
+24 bolhas por minuto  no bonnet  da 
+válvula PIG -XO 
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+8,"ESCAPE DE GÁS - 7-CO-8D-RJS / P-09  OS: 6000582112 
+CAMPO  COORDENADAS UTM / SIRGAS 2000 / MC 39°  INSTALAÇÃO  PROFUNDIDADE (m) 
+Corvina  N 7.503.213 / E  345.148  7-CO-8D-RJS    246m 
+Início de inspeção  14h13min de 06/04/2021 Realizar inspeção diferenciada de escape de gás na ANM do poço 7-CO-8D-RJS interligado a P-09, a fim 
+de detectar possíveis não conformidades. 
+ 
+3. A existência de escape de gás em 2 pontos mencionados no relatório WYco18-086 de 09/06/2018, não foi 
+encontrada durante a inspeção realizada nesta data. Observado escape de gás continuo, na Treecap. Primeiro ponto de escape de gás na BGP, não 
+gás na BGP, não observado.  observado. Segundo ponto de escape de gás no flange da 
+gás no flange da válvula W2.  válvula W2, não observado 
+   
+Foto 14. Terceiro ponto de escape de gás na Treecap, 
+gás na Treecap. CONCLUSÃO 
+•  Realizada inspeção diferenciada de vazamento de gás da ANM do poço 7-CO-8 do D-RJS  
+• Observado escape de gás na Treecap e enviado e-mail com vídeo de 10s para o Turno; 
+•  Skid de anodos, com anodos apresentando desgaste generalizado leve Foi identificado algum tipo de escape de fluido?  ☒SIM  ☐ NÃO  Escape  de  gás  continuo  já 
+identificado no relatório anterior. 
+(I)  Foi  identificada  alguma  avaria  no  objeto  de  ☐SIM  ☒NÃO   
+intervenção? 
+(J)  Foi  identificado  algum  reparo  no  objeto  de  ☐SIM  ☒ NÃO   
+intervenção? 
+(K) Foram  identificados  cruzamentos  ou  outras  ☐SIM  ☒ NÃO   
+interferências? 
+(L)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+9,"•  Foram observados 2 pontos com escape de gás (Fotos 21 e 22). Ponto 1 de escape de gás – Quadrante II Ponto 2 de escape de gás – Quadrante IV 
+(1/5min).  (1/1min). 
+4.7. CONCLUSÃO 
+•  Realizada inspeção diferenciada – Visual da BAP do BAP 8-MRL-41D-RJS/P-19; 
+•  Danos mecânicos (amassamento) em duas hastes indicadoras de travamento da BAP e Hot stab da válvula 
+DM no painel da BAP; 
+•  Foram observados 2 pontos com escape de gás. 
+ 
+Tabela 9 - CONCLUSÃO 
+Pergunta  Resposta  Referência / Observação 
+(A)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+10,"Não foi autorizado pelo Turno OSS o overtorque na 
+válvula DS1 devido possível hidrato, podendo quebrar a válvula, sendo assim, solicitado prosseguir para tentativa de fechamento da válvula DS2 
+no painel da ANM, obtendo sucesso com seu fechamento, prosseguir com a operação somente com a DS2 
+fechada.                                                                                                                - Realizado fechamento com (torque tool + chave garfo) da válvula DS2, no 
+painel da ANM, com 80 lb.ft, 1/2 volta.                                                                                                                       - Solicitado pelo  Igor (Gestor de 
+Integridade Submarina) que não prosseguisse com a operação sem que seja realizado o Fechamento da DS1, explicado que Fechar apenas uma, o 
+fabricante não garante a manutenção da DHSV aberta. Além disso, vai expôr um dos pistões (cujo selo não é estanque  para gás) à migração de 
+gás e formação, de fato, do hidrato. Esse hidrato pode ocorrer no circuito desse pistão, como pode ocorrer a montante, no circuito comum entre 
+os pistões.",{'recommendations': []}
+11," Realizada verificação do status  de válvula final ; (Foto 20) 
+ Observado hidrato no bloco do conjunto, abaixo do painel ANM. Observado hidrato no bloco, abaixo do painel ANM.   
+8.  Realizado teste funcional da válvula XO da ANM, conforme solicitação da UEP e liberação do EQSB , por e-mail; 
+ Observado hidrato no bloco do conjunto, abaixo do painel ANM.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+12,"Trabalho autorizado pelo Pablo, operador da sala de controle; 
+ 
+- Reunião pré-operacional com suporte remoto EQSB para alinhamento das etapas operacionais a 
+   
+serem seguidas; 
+  - Inspeção seguindo orientações dos procedimentos, relatórios de serviço recebidos e orientações 
+específicas do suporte remoto EQSB; 
+ 
+- Descida do ROV até a profundidade de trabalho mobilizado com minicâmera, jateador e escova 
+ 
+rotativa com cerdas de latão. 
+ 
+ 
+4.2  ATIVIDADES DA OPERAÇÃO 
+- Identificação do poço e registros fotográficos; 
+- Monitoramento no Ponto #1 da cabeça de poço na Face #1 - Média de 22 bolhas / min;  
+- Monitoramento no Ponto #2 da cabeça de poço na Face #1 - Média de 10 bolhas / min;  
+- Monitoramento no Ponto #3 da cabeça de poço na Face #3 - Média de 12 bolhas / min;  
+- Monitoramento no Ponto #4 da cabeça de poço na Face #3 - Média de 05 bolhas / min (Vide anexo 7 
+para fotos); 
+- Inspeção na região ao redor da cabeça do poço, onde não foi observado um novo ponto de 
+exsudação. 
+ 
+4.3  ATIVIDADES PÓS OPERAÇÃO 
+- Realizado o contato com a Sala de Controle do FPSO P-70 para informar o término de inspeção. 
+ 
+5  CONCLUSÃO 
+Realizada a inspeção diferenciada visual sem plano de escape de fluido na ANM do poço 3-RJS-722, 
+conforme o procedimento recebido e sem a ocorrência de anormalidades. Heading 197º - Média de 22 bolhas / min 
+2 
+ 
+
+FOTO 5 Heading 193º - Média de 10 bolhas / min 
+   
+FOTO 7 – FOTO 8 – Ponto de monitoramento #4 na Face 3  
+ Heading 330º - Média de 12 bolhas / min    Heading 330º - Média de 5 bolhas / min 
+ 
+3 
+ 
+ 
+ANEXO 08 
+ 
+ATAS OPERACIONAIS <suportebarco.oss@petrobras.com.br> 
+Subject: INFORME DE ESCAPE DE GÁS/FLUIDO_RJS-722 INFORME DE ESCAPE DE GÁS/FLUIDO: 
+1- Foi constatado que o escape intermitente de aproximadamente 22 bolhas/min. (No tempo de 15 
+min = 330 bolhas no total). Foi constatado que o escape intermitente de aproximadamente 10 bolhas/min. (No tempo de 15 min = 
+150 bolhas no total). 
+E verificado também na face 3, no hdg = 330° um escape de fluido de baixa intensidade no solo marinho, ao 
+lado da cabeça de poço (AAP). Foi constatado que o escape intermitente de aproximadamente 5 bolhas/min (no 
+tempo de 15 min = 75 bolhas no total).","{'recommendations': [{'recommendation': 'opção 2', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}]}"
+13,"Descrição Detalhada da Anomalia
+Orientações para preenchimento:
+Durante a operação de Inspeção e investigação de possível hidrato nas válvulas de controle do SCM da ANM do BUZ-002 , foi necessário a 
+utilização de valores de torques acima do TMO  100 Lb.",{'recommendations': []}
+14,"Durante o monitoramento, foi identificado dois pontos 
+de escape de fluido de coloração escura não identificada nos orifícios existentes na cabeça de poço embaixo 
+do funil da BAP onde foi contabilizado aproximadamente 1 bolha por minuto (Fotos 10 e 15); 
+  P-57 solicita o fechamento da W2 conforme item 1.15 do PO; 
+  ROV realiza o fechamento da válvula W2 em Override com 7,6 voltas no sentido horário com 110lbf.ft (Fotos 
+16 e 17); 
+  P-57 solicita a abertura da W2 conforme item 1.19 do PO; 
+  Realizado a abertura da válvula W2 em Override com 7,5 voltas no sentido anti-horário com 110lbf.ft (Fotos 
+18 e 19); 
+ Detalhe dos pontos de escape de fluido nos orifícios  Foto 14: Detalhe dos pontos de escape de fluido nos orifícios 
+existentes na cabeça de poço em baixo do funil da BAP  existentes na cabeça de poço em baixo do funil da BAP 
+   
+Foto 15: Região com formação de possível hidrato no entorno da  Foto 16: -  A SERVIÇO DA PETROBRAS SA 
+  ANEXOS: 2 
+DP&T/ SUB/SSUB/MIS/MI-ARP - CONTRATOS: 5125.0103212.17.2 e 5125.0102907.16.2
+ 
+6.  CONCLUSÕES 
+  Realizada a abertura em override da válvula W2 do poço 7-JUB-51H-ESS / P-57 conforme PO_JUB-
+51_Contingência_Inspeção e testes de integridade_rev0; 
+  Foi identificado dois pontos de escape de fluido de coloração escura não identificada nos orifícios existentes 
+na cabeça de poço em baixo do funil down da BAP onde foi contabilizado aproximadamente 1 bolha por 
+minuto;  
+  Realizado a coleta de fluido no funil down da BAP com o copo coletor.   Foi observado formação de possível hidrato no entorno da cabeça de poço JUB-51; 
+","{'recommendations': [{'recommendation': 'opção 2', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'escape de bolhas de gás'}]}"
+15,"Foi observado escape de gás  no bujão da válvula de XO da ANM ; 
+ 
+  
+Foto 9. Escape de gás no bujão da válvula de XO  da 
+ANM  Foto 10. Panorâmica do escape de gás no bujão da 
+válvula de XO da ANM SIM  ☐ NÃO  Escape de gás de pequena 
+intensidade no bujão da válvula XO 
+da ANM.  
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+16,"OBJETIVO 
+Efetuar a manobra de abertura da válvula PIG-XO da BAP afim de efetuar a comunicação da linha de produção 
+com a linha de serviço, para que UEP efetue o teste para eliminar a suspeita de hidrato. 
+3.",{'recommendations': []}
+17,"•  Foi observado escape de gás de baixa intensidade na interface ANM x CLF – Detalhe do ponto de escape de gás de 
+Foto 26. Localização do ponto de escape de gás  de 
+baixa intensidade na instrumentação do CLF, com 
+baixa intensidade na interface ANM x CLF – Face 2 
+formação de hidrato – Observado ponto de escape de gás de baixa intensidade na instrumentação do CLF, com formação de 
+hidrato ; 
+✓ Escape de gás de baixa intensidade na 
+(H) Foi identificado algum tipo de escape de fluido?  ☒SIM ☐ NÃO  instrumentação do CLF, com formação 
+de hidrato – Face 2. 
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+18,"Tree manifold antes da limpeza  Foto 2 - Formação de hidrato no bore de anular 
+ 
+   
+Foto 3 - Tree manifold após a limpeza  Foto 4 - Bore de anular após a limpeza","{'recommendations': [{'recommendation': 'opção 4', 'location': 'linha de anular do equipamento', 'type': 'hidrato'}]}"
+19,"Dissociação de hidrato em equipamentos Realizar dissociação de hidrato nas linhas de controle da DHSV do poço 7-BUZ-14DA-RJS, em apoio à 
+P-74. 
+ 
+3.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+20,":  Realizado  transbordo  de  materiais  Aker  Wayfarer  X  SS-81, 
+conforme (OS 6000594660). 
+10h40 – 23h59: Realizada operação de dissociação de hidrato em equipamentos 
+LW do poço (TFMC) – 13h05: Realizada operação de dissociação de hidrato em equipamentos 
+LW do poço (TFMC) Realizado a prevenção de hidrato com a injeção de MEG via 
+SOES.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+21,"OBJETIVO 
+ Realizar insepção visual dos equipamentos instalados no poço MLS-222 em apoio a unidade P-40 na 
+operação de dissociação de hidrato na LPO. 
+3.","{'recommendations': [{'recommendation': 'opção 3', 'location': 'linha de produção do equipamento', 'type': 'hidrato'}]}"
+22,"- ESCAPE DE GÁS [PI -ANM -EDG -18] 7 -AB-97HP -RJS / 7 -
+AB-97HP -RJS / P -31 OS: 006000585547  
+CAMPO  COORDENADAS UTM / SIRGAS 2000 / MC 39° INSTALAÇÃO  PROFUNDIDADE (m) OBJETIVO  
+ Realizar inspeção diferenciada em busca de escape de gás no conjunto de equipamentos instalados na ANM 7-
+AB-97HP -RJS interligado  à P-31. 
+3. Todas as faces foram inspecionadas e não foi verificado o escape de gás nas faces 3 e 4, conforme relatado 
+no PI -ANM -EDG -18.58384/2020.  Observado pequena exsudação do leito marinho (17 bolhas  / minuto)  na Face 2 visto da Face 3. CONC LUSÃO  
+ Realiza da inspeção visual diferenciada  no conjunto da ANM do  7-AB-97HP -RJS e monitoramento q uanto 
+a presença de escape de gás no poço ANM 7 -AB-97HP -RJS interligado a P -31 de forma integral,  seguindo 
+informações da última PATEC e PE -2SUB -00431 -I, não sendo evidenciado qualquer escape de gás nas 
+faces 3 e 4 conforme último PATEC.  Observado pequena exsudação do leit o marinho (17 bolhas/ minuto)  na Face 2 visto da Face 3.  
+ 
+ 
+6.","{'recommendations': [{'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}]}"
+23,"INSPEÇÃO DIFERENCIADA  
+OS:006000597817 
+ESCAPE DE GÁS 3-RJS-190 / 3-RJS-190 / PCH-2 
+Campo  UTM / SIRGAS 2000 / MC 039º W  Instalação  Profundidade (m) PO_INSPEÇÃO DIFERENCIADA – ESCAPE DE GÁS LOCALIZAÇÃO DO EVENTO 
+ 
+ 
+ 
+ 
+ 
+Figura 1: Local de identificação do local do escape de gás. 
+6. • 
+Realizado o monitoramento da capa de teste da ANM, por 15 minutos, em 4 ciclos de tempo, sendo observado 
+• 
+escape de gás intermitente de média intensidade, já registrado em relatório anterior. Foto 22: Escape de gás. Foto 23: Escape de gás. 10.CONCLUSÃO 
+Realizada inspeção da ANM do poço 3-RJS-190, para identificação de possível escape de gás;   
+• 
+Realizada inspeção do leito marinho, distante 5m da cabeça do poço, nas 4 faces da ANM; 
+• 
+Monitorado escape de gás intermitente de média intensidade na capa de teste da ANM; • 
+Escape de gás informado à UEP; Escape de gás na capa de teste 
+(H)  Foi identificado algum tipo de escape de fluido?  ☒SIM ☐ NÃO 
+da ANM. 
+(I)  Foi identificada alguma avaria no objeto de intervenção?  ☒SIM ☐ NÃO  - 
+(J)  Foi identificado algum reparo no objeto de intervenção?  ☐SIM ☒ NÃO  - 
+(K)  Foram identificados cruzamentos ou outras interferências?  ☐SIM ☒ NÃO  - 
+(L)  Foi identificada a ocorrência de anomalias críticas?  ☐SIM ☒ NÃO  - 
+11.OBSERVAÇÃO","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+24,"  Observado escape de gás intermitente de baixa intensidade no conector do anular, com fluxo aproximado de 
+3 bolhas a cada 5 minutos. : 5 / 12 
+SUBSEA7 DO BRASIL - A SERVIÇO DA PETROBRAS S/A 
+ANEXOS: 2 
+DP/SUB/SSUB/MIS/MI-AUP - CONTRATOS: 5125.0103212.17.2 e 5125.0102907.16.2 
+   
+5.  FOTOS 
+   
+Foto 1: Panorâmica do poço 3-NA-2-RJS.  Foto 2: Identificação do Equipamento – face 1. 
+   
+Foto 3:  Escape de gás de baixa intensidade no conector do  Foto 4: Corrosão no tampão e na aba do Bull Nose de 10” – 
+anular – face 1.  face 1. Foto 29: Conector do anular, sem escape de gás, e monitaramento de 10 minutos – face 1. 
+ 
+   
+SUBSEA7  FISCALIZAÇÃO 
+Wagner Alonso  Henrique Alexandre Cadete Fernandes 
+SISPAT: 40087445  Matr. A conclusão desta operação, encontra-se abaixo: 
+  Observado escape de gás intermitente de baixa intensidade no conector do anular, com fluxo aproximado de 3 
+bolhas a cada 5 minutos (Código do RA 14.232), conforme já mencionado nos relatórios anteriores. Informado 
+via telefone o escape de gás ao Sr. Rodrigo Araújo de Oliveira – Operador de produção da PNA 2; 
+  Equipamento travado com Clamp; Observado escape de gás intermitente 
+de baixa intensidade no conector do 
+(H) Foi identificado algum tipo de escape de fluido?  ☒SIM  ☐ NÃO  anular, com fluxo aproximado de 3 
+bolhas a cada 5 minutos.","{'recommendations': [{'recommendation': 'opção 4', 'location': 'linha de anular do equipamento', 'type': 'escape de bolhas de gás'}]}"
+25,"Assentamento da TRT com pórticos de destravamento mecânico da ANM obstruídos por hidrato"". Conforme 
+recomendações da MOC:
+- Revisada SOP, excluindo, nas etapas aplicáveis, a contingência de Destravamento Mecânico do conector da ANM em caso de falha no 
+destravamento hidráulico, justificando com o fato dos pórticos estarem obstruídos por hidrato, citando o RA deste evento.
+- Incluído na Passagem de Serviço EQSB a indisponibilidade do Destravamento Mecânico do conector da ANM em caso de falha no destravamento 
+hidráulico, justificando com o fato dos pórticos estarem obstruídos por hidrato, citando o RA deste evento.
+- Informado ao Fiscal para revisar o CRONO e documentos cabíveis, excluindo, nas etapas aplicáveis, a contingência de Destravamento Mecânico 
+do conector da ANM em caso de falha no destravamento hidráulico, justificando com o fato dos pórticos estarem obstruídos por hidrato.
+- Incluído no painel da LER informação para não atuação da função ""","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+26,"De acordo com o fiscal, havia um indício de hidrato no poço 
+e que essa seria a causa dos valores baixos de pressão do TPT indicados anteriormente no Multisas. 
+Verificado que o display do módulo 1 do Multisas não estava funcionando adequadamente, uma 
+vez que os valores de pressão e temperatura ficam congelados na tela e os dados não são 
+armazenados  na  memória  do  Multisas.",{'recommendations': []}
+27,"OUTROS PONTOS RELEVANTES  
+• Observado a presença de  hidrato na estrutura da BAP - Face 4  (Foto 57) . Formação de hidrato na estrutura da BAP - Face 4.  
+ 
+5.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+28,"  Foi observado escape de fluido para o meio externo da ANM localizado no vértice do painel SCM, entre as 
+faces 2 e 3, sendo o mesmo monitorado durante 15 minutos, apresentando escape de 7 bolhas por minuto; 
+(Fotos 22 e  23) 
+4.5. CONCLUSÃO 
+  Realizada inspeção programada  na ANM do poço 7-BUZ-31D-RJS, nas Faces 1, 2, 3 e 4, conforme 
+procedimento; 
+  Observado escape de fluido para o meio externo da ANM, localizado no vértice do painel SCM, entre as faces 
+2 e 3, o mesmo foi monitorado durante 15 minutos, observando o escape de 7 bolhas, por minuto; 
+  Não foi realizado teste funcional de válvulas, conforme solicitação do GPLAT P-76 (Srº André Hurtado), os 
+testes funcionais das válvulas serão feitos em outro momento.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+29," Efetuar abertura e fechamento da VHIF do poço MLS-222 em apoio a operação de dissociação de hidrato 
+na LPO.","{'recommendations': [{'recommendation': 'opção 3', 'location': 'linha de produção do equipamento', 'type': 'hidrato'}]}"
+30,"- ESCAPE DE GÁS 7-VL-2D-RJS / 7-VL-2D-RJS / PGP-1 OBJETIVO 
+•  Realizar inspeção diferenciada de escape de gás na ANM do poço 7-VL-2D-RJS e seus acessórios, a fim 
+de monitorar a possível evolução de escapes de gás conhecidos e surgimento de novos escapes. 
+3. A baixa visibilidade encontrada na locação em diferentes tentativas de realização da operação afetou a 
+qualidade das fotos do relatório, porém não impossibilitou a identificação dos pontos de escape de gás, 
+objetivo final da inspeção. •  Realizado monitoramento por um período de 15 minutos do ponto de vazamento na interface ANM x Capa 
+de Abandono, conforme mencionado no parecer técnico PI-ANM-EDG12.37456_2017, sendo observado 
+escape de gás intermitente de baixa intensidade – Face Norte; (Fotos 2 e 3)   
+•  Observado acúmulo de gás (bolsão) na interface ANM x Capa de abandono – Face Sul; (Fotos 4 e 5) 
+•  Realizada inspeção no compensador da ANM, conforme recomendação do parecer técnico  PI-ANM-
+EDG12.37456_2017, não sendo observado escape de gás.  
+   
+Foto 2. Panorâmica do ponto de escape de gás na  Foto 3. Detalhe do ponto de escape de gás na 
+interface ANM x Panorâmica do acúmulo de gás (bolsão) Detalhe do acúmulo de gás (bolsão) na 
+interface ANM x CONCLUSÃO  
+•  Realizada inspeção diferenciada de escape de gás no conjunto ANM do poço 7-VL-2D-RJS, não sendo 
+observados novos pontos de vazamentos além dos conhecidos. 
+Tabela 6 - CONCLUSÃO 
+Pergunta  Resposta  Referência / Observação 
+(A) Identificado escape de gás e 
+formação de bolsão na interface ANM 
+(H)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+31,"- ESCAPE DE GÁS 6 -MRL -199D -RJS / 6 -MRL -199D -RJS / P -20 OS: 006000581879  
+CAMPO  COORDENADAS UTM / SIRGAS 2000 / MC 39° INSTALAÇÃO  PROFUNDIDADE (m) Realizar inspeção diferenciada de escape de gás  na ANM do poço 6 -MRL -199D -RJS e seus acessórios, a 
+fim de monitorar a possível evolução de escapes de gás conhecidos e surgimento de novos escapes . 
+3. VAZAMENTOS EXTERNOS  
+• Realizado o monitoramento por um período de 15 minutos  na Tree Cap , em ponto de escape mencionado  
+no parecer técnico PI-ANM -EDG6.62483_2021 , onde  foi observado escape de apenas 1 (uma) bolha nesse 
+período, aparentemente oriund o do anodo do subequipamento;  (Fotos 14 e 15)  
+• Realizado o monitoramento por um período de 15 minutos na região de interface da ANM x BAP (próximo 
+ao atuador da válvula W1), em ponto de escape  mencionado no parecer técnico PI-ANM -
+EDG6.62483_2021 , onde não foi observado es cape de gás durante o período ; (Fotos 16 e 17 ) 
+• Identificado ponto de escape de gás intermitente de baixa intensidade, caracterizado por bolhas  de pequeno 
+e médi o porte, na haste do conector da BAP. Observado início de formação de hidrato na haste do conector da BAP;  (Foto  21) Realizada inspeção visual no leito marinho ao redor do conjunto ANM, não sendo observado escape de gás 
+durante o período de monitoramento;  Tabela 8 – STATUS  DE VÁLVULAS E DE FLY LEADS  DO CONJUNTO  (Fotos 12 e 13 ) Offshore Manager  
+ 
+ 
+ 
+  
+Foto 14.  Panorâmica da região de escape de gás na Tree 
+Cap – Face 4 Detalhe da região de escape de gás na Tree Cap – 
+Face 4 – sem escape de gás Detalhe da região monitorada entre ANM e BAP – 
+sem escape de gás Foto 18.  Panorâmica da região de escape de gás próximo 
+ao conector da BAP  Foto 19. Detalhe da região de escape de gás próximo ao 
+conector da BAP Início de formação de hidrato no conector da BAP CONCLUSÃO  
+• Realizada inspeção diferenciada de escape de gás da ANM do poço 6 -MRL -199D -RJS; 
+• Observado no vo ponto de vazamento na haste do  conector da BAP e início de formação de hidrato na mesma . SIM  ☐NÃO  Escape de gás próximo ao conector 
+da BAP.  
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+32,"Devido à suspeita de hidrato nas funções CI-4 e CI-2 do poço 7-BUZ-12-RJS, foi realizada 
+inspeção, posterior substituição do SCM S/N 132 pelo SCM S/N 96 e substituição da SCMMB FC-468 
+pela SCMMB FC-441 para recuperação do controle hidráulico total do poço. Durante as desconexões dos EFLs, foi verificado bolhas de fluido sobre o topo do SCM S/N 132. Observadas bolhas provenientes da parte superior do SCM. o prosseguimento da operação assim 
+que cessasse o aparecimento de bolhas •  Içado o SCM S/N 132 à 80m (profundidade limite para operação com ROV), realizada inspeção 
+visual e observadas bolhas provenientes da parte superior do SCM. o prosseguimento da operação assim que 
+cessasse o aparecimento de bolhas Realizado pull 
+test, teste ok; 
+•  Içado o SCM à 50m (fora do limite de operação com o ROV) e aguardado 20 minutos; 
+•  SCM à 80m (profundidade limite para operação com ROV), realizada inspeção visual e não foram 
+observadas bolhas provenientes do SCM; 
+•  Içado o SCM até a superfície, realizado inboarding, apoiado sobre o pallet da embarcação protegido 
+com manta absorvedora e kit SOPEP; 
+•  Realizado checklist do SCM Não foram observados quaisquer indícios 
+de formação de hidrato na SCMMB; 
+• Aos 800 metros foram 
+observadas bolhas provenientes da SCMMB. o prosseguimento da operação assim que 
+cessasse o aparecimento de bolhas; 
+•  Solicitado que a equipe do Sistema de Controles seguisse até a enfermaria para realizar o teste de 
+COVID, pois algumas pessoas testaram positivo a bordo; •  Aguardado o cessamento do surgimento de bolhas provenientes da SCMMB para prosseguir com 
+a operação, conforme orientado pelo suporte Turno SEL BR; Não havia presença de hidrato nos couplers, porém com 
+presença de borra escura nas linhas 5 que corresponde a M2/AI e AI2 e linha 13 que 
+corresponde a CI-4. Foi realizado jateamento dos couplers, obtendo sucesso na limpeza e após 
+os 15 minutos não foi visualizado bolhas, hidrato e sujeira. Realizou-se uma inspeção onde não se observou 
+a existência de hidrato na Mounting Base da ANM. Durante as desconexões dos EFLs, foi verificado bolhas de fluido sobre o top do SCM. Figura 4 - Verificação da ausência de hidrato. 
+ 
+3.2.3  Desconexão Elétrica Aos 800 metros 
+foram observadas bolhas provenientes da SCMMB. o prosseguimento da operação assim que 
+cessasse o aparecimento de bolhas Ao Inspecionar o SHD1 da ANM após a retirada do HFL do MCVU, não foi verificada presença de 
+hidrato nos couplers, porém houve presença de borra escura nas linhas 5 que corresponde a M2/AI e AI2 e 
+linha 13 que corresponde a CI4. Foi realizado jateamento dos couplers, obtendo sucesso na limpeza e após os 15 minutos não foi 
+visualizado bolhas, hidrato ou sujeira.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+33,"Verificada presença de hidrato nas linhas das 
+28/12/2019  SCM-105  RSCMMB,  2012  válvulas CIs no SCM, RSCMMB e HFL.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+34,"  Observado escape de gás apresentando 9 bolhas/minuto de fluxo intermitente, na base da placa lógica, no 
+stab 15 (fotos 28 e 29); 
+  ROV monitorou o escape de gás na base da placa lógica, no stab 15. Foi observado que após a remoção do 
+hidrato do stab 15, o fluxo aumentou para 47 bolhas/minuto. Após 2 horas do término da limpeza de hidrato 
+do stab 15, foi observado que nova formação se iniciou. Escape de gás intermitente na base da placa lógica / 
+stab 15 
+   
+Foto 29. Escape de gás intermitente na base da placa lógica /  Foto 30.   Observado escape de gás apresentando 9 bolhas/minuto de fluxo intermitente, na base da placa lógica, no 
+stab 15. Escape de gás apresentando 9 
+(H) Foi identificado algum tipo de escape de fluido?  ☒SIM  ☐ NÃO  bolhas/minuto de fluxo intermitente, na 
+base da placa lógica, no stab 15. 
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+35,"03 
+DP&T-SUB/OPSUB - CONTRATOS: 5900.0113817.19.2 & 5900.0113821.19.2 
+ 
+   
+FOTO 7: Escape de gás no adaptador da válvula V-5  FOTO 8: Detalhe do escape de gás no adaptador da válvula Escape de gás no adaptador da válvula V4_P-07 
+   
+FOTO 15: Válvula V4_P-07 fechada. Elaborado 
+• 
+RA15871 e informe de escape de gás; 
+Foi observado o escape contínuo de baixa intensidade de gás na válvula ESDV-8-VR-P7; Elaborado RA e 
+• 
+informe de escape de gás;","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+36,"• Observado escape de gás no flow by  da cabeça de poço –  Face Norte. Após a constatação do escape de 
+gás foi informado ao  Luiz Armando (DAJS) a bordo da P -31, a Gisele suporte EQSB de terra e a fiscalização  
+de bordo. O vazamento foi monitorado por um período de 15 minu tos e verificado escape de 3 bolsões  com 
+aproximadamente 45 bolhas . Poço sem ANM ou BAP instalada, estando presente apenas a BGP e outras estruturas deixadas ao redor;  
+• Identificadas ao redor, uma capa de proteção, cabo de aço e extremidade dos  dutos  sobre a BGP , ambos  
+tamponados com flange cego;  
+• Identificado  escape de gás no furo de flow by  da cabeça do poço, 3 bolsões com aproximadamente 45 bolhas 
+na face norte que foi comunicado e evidenciado para a fiscalização do WildeBeest , Suporte EQSB  e produção 
+da P-31. Petrobras;  
+• Vídeo e fotos evidenciando o escape de gás para avaliação do STO;","{'recommendations': [{'recommendation': 'opção 2', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'escape de bolhas de gás'}]}"
+37,"Durante inspeção de status de válvulas da ANM foi observado escape de gás itermitente de baixa intensidade no atuador da válvula UM. Durante inspeção de status de válvulas da ANM foi observado escape de gás itermitente de baixa intensidade no atuador da válvula UM. Realizada inspeção no ponto de origem do escape de gás, constatado escape intermitente de pequena intensidade, capturado pequeno trecho de 
+vídeo e enviado ao STO turno EQSB que fez o informe e encaminhou a UEP. Anexos
+Detalha do ponto do escape de gás.jpg Detalha do ponto do escape de gás.jpg","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+38,"Após realizar os testes funcionais, foi observado que a M2 permaneceu    
+aberta hidraulicamente (vale ressaltar que o indicador encontra-se inoperante, verificado abertura e fechamento pelo sextavado no painel da  
+ANM), indicando uma falha na atuação de fechamento da mesma, a fiscalização e o STO foram informados, e decidiram  
+prosseguir com a operação, pois uma das suspeitas na falha de atuação da M2, era de formação de hidrato no bloco da ANM. HCR afim de desassociar possível hidrato no bloco da ANM, 
+durante o bombeio foram realizados 20 ciclos de atuação na M2, visando obter sucesso no fechamento total da mesma, porém não obtivemos 
+sucesso.",{'recommendations': []}
+39,"OBSERVAÇÕES 
+•  Foi observado um escape de gás no atuador do bloco central da ANM que foi reportado à PGP-1. Foto 23: Escape de gás no atuador do bloco central da ANM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA  FISCALIZAÇÃO  
+EMISSÃO DO DOCUMENTO Durante a operação de medição de espessura, foi observado um escape de gás no atuador localizado no bloco 
+central da ANM. Observado escape de gás no atuador 
+(H)  Foi identificado algum tipo de escape de fluido?  ☒ SIM ☐ NÃO 
+no bloco central da ANM. 
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+40,"Escape de gás observado no conector do anular, já mencionado nos relatórios anteriores. •  Foram realizados dois monitoramentos de 30 minutos, um ao início da inspeção e outro ao fim, sendo con-
+tadas as bolhas de gás a fim de gerar uma comparação quantitativa do evento; 
+• No primeiro monitoramento foram observados 11 escapes de baixa intensidade e no segundo 7 escapes 
+de baixa intensidade, demonstrando que o escape não é constante temporalmente. 
+ 
+TABELA 6 – CONTROLE DE ESCAPE DE GÁS 
+Quantidade de 
+Evento  Hora  Evento  Hora  Intensidade 
+bolhas 
+1  19:28  2  7  19:47  1 
+2  19:31  2  8  19:48  2 
+3  19:34  1  9  19:50  1 
+4  19:38  1  10  19:53  2 
+5  19:41  2  11  19:56  2 
+6  19:43  2   - 
+ 
+TABELA 7 – CONTROLE DE ESCAPE DE GÁS 
+Quantidade de 
+Evento  Hora  Evento  Hora  Intensidade 
+bolhas 
+1  23:23  2  5  23:44  2 
+2  23:26  5  6  23:47  2 
+3  23:32  2  7  23:52  1 
+4  23:40  3  - 
+ 
+ 
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA  FISCALIZAÇÃO ONSHORE 
+EMISSÃO DO DOCUMENTO Realizada inspeção visual na ANM do poço 3-NA-2-RJS em apoio à PNA-2, sendo identificado o seguinte: 
+✓  Escape de gás no conector do anular, já citado nos relatórios anteriores CGna21-050 e 
+CHIna21-129; 
+✓  Dano mecânico relevante no poste-guia #4, também citado nos relatórios anteriores CGna21-050 
+e CHIna21-129; 
+✓  Presença de pontos de corrosão dispersos por todo o conjunto; 
+✓  Incrustações generalizadas moles e duras por todo o conjunto; 
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA  FISCALIZAÇÃO Foi identificado algum tipo de escape de fluido?  ☒SIM ☐ NÃO  Observado escape de gás de baixa intensidade 
+(I)","{'recommendations': [{'recommendation': 'opção 4', 'location': 'linha de anular do equipamento', 'type': 'escape de bolhas de gás'}]}"
+41,"ESCAPE DE GÁS [PI-ANM-EDG6] 7-BFR-12PA-ESS / 7-
+OS: 006000585350 
+BFR-12PA-ESS / P-58 
+CAMPO  COORDENADAS UTM / SIRGAS 2000 / MC 39°  INSTALAÇÃO  PROFUNDIDADE (m) 
+Baleia Franca OBJETIVO 
+  Realizar inspeção diferenciada em busca de escape de gás no conjunto de equipamentos instalados na ANM   Monitorado pontos, próximo ao indicador de travamento da BAP (face 4), em 2 pontos distintos, previamente 
+relatados em inspeções anteriores, aonde não foram observados escapes de gás (fotos 3 a 5);  
+  Monitorado pontos, próximos da interface BAP  x ANM, em 2 pontos distintos, relatados em inspeções 
+anteriores, aonde não foram observados escapes de gás (fotos 6 a 8); 
+  Identificado escape de gás, continuo, de média intensidade (80 a 100 bolhas por minuto), proveniente de 1 furo 
+na parte superior da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP - Face 
+4 (fotos 9 e 10); 
+  Identificado escape de gás, continuo, de média intensidade (80 a 100 bolhas por minuto), proveniente de 1 furo 
+na parte superior da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP. Visualizado fenômeno de convecção proveniente do mesmo ponto de escape - Face 3 (fotos 11 e 12); 
+  Identificado escape de gás, continuo, de baixa intensidade (05 bolhas por minuto), proveniente de local com 
+formação de hidrato, na capa lógica da ANM - Face 2 (fotos 13 e 14); 
+  Identificado escape de gás, continuo, de baixa intensidade (10 bolhas por minuto), proveniente de 1 furo na 
+parte superior da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP - Face 2 
+(fotos 15 e 16); 
+  Identificado escape de gás, continuo, de média intensidade (100 bolhas por minuto), proveniente de 1 furo na 
+parte superior da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP - Face 2 
+(fotos 17 e 18); 
+  Identificado escape de gás, continuo, de baixa intensidade (05 bolhas por minuto), proveniente de 1 furo na 
+parte superior da cabeça do poço, abaixo do funil down da BAP - Face 1 (fotos 19 e 20); 
+  Monitorado 02 pontos de escape de gás relatados em inspeções anteriores em local com formação de hidrato 
+aonde não foi observado escape de gás abaixo do funil down da BAP - Face 1 (fotos 21 e 24); 
+   
+Foto 3. Pontos relevantes: 
+  Observado ponto de escape de gás contínuo de média intensidade, proveniente de 1 furo na parte superior 
+da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP – Face 04; 
+  Observado ponto de escape de gás continuo de média intensidade, proveniente de 1 furo na parte superior 
+da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP. Observado também 
+fenômeno de convecção proveniente do mesmo ponto de escape - Face 3; 
+  Observado ponto de escape de gás continuo de baixa intensidade, proveniente de local com formação de 
+hidrato, na capa lógica da ANM - Face 2; 
+  Observado ponto de escape de gás continuo de baixa intensidade, proveniente de 1 furo na parte superior 
+da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP - Face 2; 
+  Observado ponto de escape de gás continuo de média intensidade, proveniente de 1 furo na parte superior 
+da cabeça do poço, em local com formação de hidrato, abaixo do funil down da BAP - Face 2; 
+  Observado ponto de escape de gás, continuo, de baixa intensidade, proveniente de 1 furo na parte superior 
+da cabeça do poço, abaixo do funil down da BAP - Face 1.","{'recommendations': [{'recommendation': 'opção 2', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 1', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'hidrato'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+42,"Medidas corretivas
+- Ciclagem da atuação das válvulas; 
+- Atuação em override das válvulas (M2 com tempo muito elevado para abertura e fechamento, indicando possível hidrato) Por conta de presença de hidrato no conjunto sistema de controle da ANM do BUZ-02, foi realizada a operação de troca do SCM e 
+recondicionamento do HFL de linhas de função do SCMMB.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+43,"Observado 
+• 
+afloramento de 116 bolhas neste intervalo de tempo; (Fotos 12 e 14) Observado 
+• 
+afloramento de 43 bolhas neste intervalo de tempo; (Fotos 17) Observado escape de 36 bolhas no furo do Funil-up da BAP neste intervalo de tempo; (Foto 21 e 22) Observado escape de 250 bolhas neste intervalo de tempo. Na face 1, foram observadas 
+• 
+116 bolhas e na face 2, 43 bolhas neste intervalo de tempo. Observado 
+• 
+escape de 36 bolhas no furo do Funil-up da BAP neste intervalo de tempo; 
+Monitorado por 15 minutos do interior do Funil-up da Tree-Cap, entorno do cilindro do softland. Observado 
+• 
+escape de 250 bolhas neste intervalo de tempo.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+44," Escape de fluído na BAP – Face 1 (50 bolhas/20min). Foto 23.  Bolhas do escape de fluído  oleoso  na BAP – 
+Face 1.   
+ 
+  
+Foto 24.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+45,"VAZAMENTOS EXTERNOS : 
+ Localizado escape de flúido na região da instrumentação entre o tubo 21 e 22 do AVP , com fluxo aproximado 
+de uma bolha a cada 12min34seg. OUTROS PONTOS RELEVANTES : 
+ Verificado incrustações moles por toda a estrutura, paineis e válvulas do conjunto – Faces 1, 2, 3 e 4;  
+ Visualizado formação de hidrato na base adaptadora da AVP na face 2, sem presença de escape de gás  – 
+Face 2 ; 
+ MCV -U sem duto de UEH – Observado acúmulo de hidrato na saia da 
+AVP -  Face 2. Nenhuma anomalia 
+encontrada ; 
+ Não foi identificada sucata em contato com o conjunto da ANM ; 
+ Localizado escape de flúido na região da instrumentação entre o tubo 21 e 22 do AVP , com fluxo aproximado 
+de uma bolha a cada 12min34seg ; B ; 
+ Foi verificado ponto de erosão próximo a ANM na Face – 4; 
+ Verificado incrustações moles por toda a estrutura, paineis e válvulas do conjunto – Faces 1, 2, 3 e 4;  
+ Visualizado formação de hidrato na base adaptadora da AVP na face 2, sem presença de escape de gás – 
+Face 2;  
+ MCV -U sem duto de UEH – Face 2;  
+ MCV -P sem duto de PO – Face 3 ; 
+ Realizado inspeção visual a fim de verificar a integridade dos fixadores das válvulas dos subequipamentos 
+presentes na BAP, onde não foi encontrada nenhuma anomalia;  
+  
+4 5 6 
+3 
+2 1 7 
+8 
+9 10 
+11 12 
+                RELATÓRIO DE SERVIÇO  NÚMERO:   
+CHI cmr21-043 
+INSPEÇÃO DETERMINÍSTICA DE EQUIPAMENTOS SUBMARINOS  DATA: 04/03/2021 SIM ☐ NÃO  Localizado escape de flúido na região 
+da instrumentação entre o tubo 21 e 22 
+do AVP , com fluxo aproximado de uma 
+bolha a cada 12min34seg ; 
+(I)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+46,"Após reentrada da FDR na TRT-w, devido a escape de gás na ANM, foi detectado que a função carrega acumulador não estava estanque. Devido a escape de gás no bore de produção da ANM OSS, após retirada da TCAP e fundeio da mesma no leito marinho, foi decidido pela 
+fiscalização, assentar com FDR +","{'recommendations': [{'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 3', 'location': 'linha de produção do equipamento', 'type': 'escape de bolhas de gás'}]}"
+47,Sonda realizando quebra de hidrato na coluna de produção. Drenando DPR para dissociação de possível hidrato. Operação de dissociação de hidrato. Operação de dissociação de hidrato.,"{'recommendations': [{'recommendation': 'opção 3', 'location': 'linha de produção do equipamento', 'type': 'hidrato'}]}"
+48,"- ESCAPE DE GÁS [PI -ANM -EDG6] 3 -RJS-329/3 -RJS-329A / 3 -
+RJS-329A / P -31 OS: 006000588324  
+CAMPO  COORDENADAS  INSTALAÇÃO  PROFUNDIDADE (m) OBJETIVO:  
+Realizar a inspeção diferenciada de escape de gás programada no poço 3-RJS-329A interligado ao FPSO • Realizada  inspeção em todas as faces do conjunto ANM com o objetivo de encontrar pontos de escape 
+de gás . As frequências observadas foram:  
+o 3 (três) bolhas por minuto para a face 2 ; (Foto 6) Offshore Manager  José Lauro Piorno  
+Matrícula: 978214 -0 
+SUB/SSUB/MIS/MI -AUP 
+ o 5 (cinco) grupo de bolhas por minuto na face 3. Ponto de visualização de escape de gás na 
+conexão entre a UGB  e ANM – Face 2 . Foto 8:  Panorâmica do escape de gás pela Face 3. Origem do escape de gás visualizado na foto 
+anterior entre UGB e ANM – Face 3.  
+6. Realizada a inspeção diferenciada de escape de gás programada no poço 3 -RJS-329A interligado ao FPSO Foram observados pontos de escape de gás na conexão entre UGB  e a ANM nas faces 2 e  3. As fr equências 
+observadas foram de 3 (três) bolhas por minuto para a face 2 e 5 (cinco) grupo de bolhas  por minuto para a face 
+3. Tanto o local quanto a intensidade de saída condizem com o relatório anterior , SEab20 -085, haja vista o local de 
+inspeção, registro panorâmico  no relatório,  e quantidade variável de bolhas  informados no mesmo. SIM  ☐NÃO  Escape de gás entre a UGB  e a ANM  
+nas faces 2 e 3.  
+(I) SIM  ☐ NÃO  Escape de gás entre a UGB  e a ANM  
+nas faces 2 e 3.  
+(M) Houve limitações em alguma parte da operação que 
+dará a necessidade de complemento com outro 
+recurso?  ☐SIM  ☒","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+49,"  Observado  escape  contínuo  de  fluido,  de  baixa  intensidade  (aproximadamente  6  bolhas  por  minuto), 
+proveniente do solo marinho, no entorno da cabeça do poço; 
+PRESTADOR DE SERVIÇOS RESPONSÁVEL PELA EMISSÃO DO DOCUMENTO E 
+NOME / ASSINATURA / SNQC DO INSPETOR CONTRATADO 
+EXECUÇÃO DO SERVIÇO 
+   
+   
+    Joaquim Alexandre Barcellos Barreiros – SNQC 6027 Observado escape contínuo de fluido, de baixa intensidade (aproximadamente 6 bolhas por minuto), 
+proveniente do solo marinho, no entorno da cabeça de poço.","{'recommendations': [{'recommendation': 'opção 2', 'location': 'leito/solo marinho', 'type': 'escape de bolhas de gás'}]}"
+50,"Topado no TH.
+- Descido BHA de arame com localizador 3,68"" e estampador 3,25"".
+- Circulado para aquecer ANM e dissociar possível hidrato no TH .
+- Identificando perfil da DHSV com BHA de arame com localizador 3,68"" e estampador 3,25""
+- Identificado nipple 3,562"" e nipple DB 3,50"" com BHA de arame com localizador 3,56"" e estampador 3,25""
+- Efetuada dissociação de hidrato com N2 via HCR.","{'recommendations': [{'recommendation': 'opção 1', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'hidrato'}, {'recommendation': 'opção 1', 'location': 'equipamento', 'type': 'hidrato'}]}"
+51,"Monitorado o local de escape de fluido na viga de apoio da BAP, ao lado do MCV-
+4  3  P durante 15 minutos e visualizado escape de fluido intermitente de baixa  12 e 13 
+intensidade, desprendimento de 6 bolhas de coloração escura.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+52," Presença de  ponto de  escape na haste da válvula S1 no painel da ANM  (180 bolhas por minutos) Panorâmica do local de escape  de gás na 
+haste da válvula S1 no pain el da ANM - Face 1. Panorâmica do local de escape  de gás entre 
+válvula M2 e M1 – Face 2. Presença de ponto de escape na haste da válvula S1 no painel da ANM  (180 bolhas por minutos)","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+53,"O objetivo não foi atingido devido a hidrato na COI. Realizado dissociação de hidrato no bloco da ANM com ventilação para a superfície. Efetuada tentativa de quebra de hidrato ventilando COI, sem sucesso Efetuada operação de bombeio de CADIT aquecido na tentativa de dissociar hidrato. Ventilado COI para dissociação de hidrato. Ventilado COI para dissociação de hidrato. Ventilado COI para dissociação de hidrato. Realizada diversos ciclos de ventilação e N2 lift com FT para quebra de hidrato. Realizado nova tentativa de quebra de hidrato com FT por dentro do camisão partido.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+54,"Solicitado ciclo de abertura e fechamento da válvula, 
+onde foi constatado movimentação do sextavado, e indicador travado na posição A. 
+Ao final da manobra, foi verificado um pequeno bloco de coloração branca (semelhante a formação de um hidrato), que aparentemente já estava 
+solto sobre a estrutura modulo MP3, e se deslocou para cima do indicador da válvula TP, provavelmente pela força do truster do ROV.",{'recommendations': []}
+55,"O parecer inicial da anomalia indica possível formação de hidrato no conector ou falha na abertura do anel ""C"".",{'recommendations': []}
+56,"Hidrato no furo de cimentação –   
+Face 3 
+5.","{'recommendations': [{'recommendation': 'opção 1', 'location': 'cabeça do poço (SCPS/SCPM)', 'type': 'hidrato'}]}"
+57,"- ESCAPE DE GÁS 7-VL-3D-RJS / 7-VL-3D-RJS / PGP-1 OBJETIVO 
+•  Realizar inspeção diferenciada de escape de gás na ANM do poço 7-VL-3D-RJS e seus acessórios, a fim 
+de monitorar a possível evolução de escapes de gás conhecidos e surgimento de novos escapes. 
+ 
+3. •  Encontrado novo ponto de escape de gás de baixa intensidade no atuador da válvula W2, não mencionado 
+no relatório de referência; •  Realizado monitoramento por um período de 15 minutos, não sendo visualizado escape de gás mencionado 
+no relatório referência FAvl20-163 na relief da válvula XO; 
+•  Realizado monitoramento por um período de 15 minutossendo observado escape contínuo de gás, de média 
+intensidade, oriundo da placa hidráulica da ANM, conforme mencionado no relatório referência FAvl20-163; 
+•  Realizado monitoramento por um período de 15 minutos, sendo observado escape contínuo de gás de baixa 
+intensidade no flange da válvula S1 e S2, conforme mencionado no relatório de referência FAvl20-163; 
+•  Realizada inspeção visual no leito marinho ao redor do conjunto ANM, não sendo observado escape de gás 
+durante o período de monitoramento. Foto 6.  Panorâmica da região do escape de gás no  Foto 7. Detalhe da região do escape de gás no atuador da 
+atuador da válvula W2 – Panorâmica da região do escape de gás na placa Detalhe da região do escape de gás na placa Panorâmica da região do escape de gás no flange 
+hidráulica da ANM  da válvula S1 
+   
+Foto 12. Detalhe da região do escape de gás no flange da Foto 13. Panorâmica da região do escape de gás no flange 
+válvula S1  da válvula S2 
+ 
+Foto 14. Detalhe da região do escape de gás no flange da 
+válvula S2 
+5. CONCLUSÃO 
+•  Realizada inspeção diferenciada de escape de gás da ANM do poço 7-VL-3D-RJS; 
+•  Identificado ponto de escape de gás na válvula W2 que não foi mencionado anteriormente no relatório 
+referência FAvl20-163 e parecer técnico PI-ANM-EDG12.59592_2020.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+58,"Observado escape de gás apresentando 06 bolhas/minuto de fluxo intermitente, na base da placa lógica, 
+no topo do stab 16 e 3 (Fotos 33 e 34);  
+•  Realizado o assentamento e travamento da capa lógica no respectivo HUB na ANM de acordo com a 
+tabela 10 (Fotos 35 a 39); 
+• A possível penetração de gás no interior 
+do UEH pode ter provocado o bloqueio da linha por hidrato, conforme mencionado na foto 33. Após o destravamento da capa lógica foi observado o escape de gás apresentando aproximadamente 36 
+bolhas a cada 5 minutos de fluxo intermitente, na base da placa lógica no topo do Stab 3 e 16, e uma 
+pequena formação de hidrato no topo do stab 16 (Foto 45); 
+•  Capa lógica recolhida ao convés (Foto 46); 
+•  Realizada a limpeza do topo do stab 16 (Foto 47); 
+•  Realizado o assentamento da capa lógica no respectivo HUB na ANM (Fotos 48 a 50); 
+•  Observada a presença de hidrato entre a base dos stabs e a base da capa lógica (Foto 51); 
+•  Removida a capa lógica e realizada limpeza do topo do stab16 (Fotos 52 a 55); 
+•  Realizado o assentamento e travamento da capa lógica no respectivo HUB na ANM de acordo com a 
+tabela 10 (Fotos 56 a 59); 
+SUBSEA 7  FISCALIZAÇÃO 
+Marcelo Ribeiro  Marcelo Rocha de Almeida 
+SISPAT: 41346090  Matrícula: 971259-1 
+Offshore Manager  SUB/SSUB/MIS/MI-ARP 
+   NÚMERO: 
+  RELATÓRIO DE SERVIÇO 
+SAbfr21-030 
+  
+DATA:
+TFMV – Teste Funcional e Manuseio de Válvulas 
+20/04/2021 
+RSV SEALION AMAZÔNIA  PÁG. Observado escape de 06 bolhas por minuto nos 
+formação de hidrato e escape de gás intermitente de baixa 
+coupling 3 e 16 do HUB da capa lógica  
+intensidade 
+   
+Foto 35: Observado escape de gás pelo coupling 3 e formação 
+Foto 46: Capa no convés 
+de hidrato no coupling 16 
+   
+Foto 47 : 15/25 
+SUBSEA7 -  A SERVIÇO DA PETROBRAS SA 
+DP&T/SUB/OPSUB/MIS/IPSE - CONTRATOS: 5125.0103207.17.2 E 5125.0102585.16.2  ANEXOS: 04 
+  
+   
+Foto 49:  Confirmada a posição de assentamento da capa 
+Foto 50:  Sextavado da capa lógica após o assentamento 
+lógica 
+   
+Foto 52:  Ferramenta de torque posicionada para realizar o 
+Foto 51:  Observada presença de hidrato 
+destravamento da capa lógica 
+   
+Foto 53:  Capa lógica removida para realizar remoção de 
+Foto 54:  Formação de hidrato no coupling 16 
+hidrato 
+SUBSEA 7  FISCALIZAÇÃO Durante a operação não foi observado escape de gás intermitente nos stab’s 3 e 16 na base do HUB da 
+capa lógica. 
+10. Observado escape de gás intermitente de baixa intensidade pelos stab’s 3 e 16.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}, {'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'hidrato'}]}"
+59,"- ESCAPE DE GÁS 4-RJS-388 / 4-RJS-388 / 
+OS: 006000582110 
+PNA-2 
+CAMPO  COORDENADAS UTM / SIRGAS 2000 / MC 39°  INSTALAÇÃO  PROFUNDIDADE (m) 
+Namorado Realizar inspeção diferenciada com ROV, para detectar possível evolução de escape de gás ou fluidos já conhecidos 
+e surgimento de novos escapes para o meio externo no conjunto ANM do poço 3-RJS-393D / 3-RJS-393D em PNA-
+1. 
+3.   Observado escape de gás, já conhecido na região próxima ao travamento da ANM, não ocorrendo nenhum tipo 
+de vazamento no mesmo, e observado vazamento de gás intermitente de baixa intensidade (5 bolhas/minuto) 
+por uma das porcas de fixação ANM x BGP (foto 3 a 5); 
+  Observado escape de gás intermitente de média intensidade (240 bolhas/minuto), no conector BGP na face 2 
+(foto 6 e 7). Panorâmica do escape de gás na região da  Foto 4. Detalhe do escape de gás próximo a região de 
+BGP -  Face 2.   travamento da ANM – Detalhe do escape de gás na região da porca  Foto 6. Panorâmica do escape de gás na região da 
+de fixação da ANM x BGP – Detalhe do escape de gás na região da BGP – 
+ 
+Face 2. CONCLUSÃO 
+  Realizado inspeção de escape de gás na ANM do poço 4-RJS-388, dando ênfase aos pontos já conhecidos 
+citados no PATEC - PI-ANM-EDG-18.34960_2017. O ponto de vazamento de gás próximo ao travamento da ANM, mencionando no relatório de referência, não 
+apresentou nenhum tipo de vazamento durante o monitoramento; 
+  Observado vazamento de gás intermitente de baixa intensidade (5 bolhas/minuto) por uma das porcas de 
+fixação ANM x BGP; 
+  Observado escape de gás intermitente de média intensidade (240 bolhas/minuto), no conector BGP na face 2.","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+60,"- ESCAPE DE GÁS [PI-MPPV-EDG12] MSG-RO-01B  OS:006000584978  
+CAMPO COORDENADAS UTM / SIRGAS2000 / MC 39° OBJETIVO 
+ Realizar inspeção diferenciada para detectar possível evolução de escape de gás ou fluidos já conhecidos e 
+surgimento de novos escapes para o meio externo no manifold MSG-RO-1B em PRA-1.  
+3. Detalhe do local na instrumentação lateral no bloco 
+central do módulo ESS-130 do manifold sem identificação de 
+escape de gás. Visão panorâmica da área na instrumentação lateral 
+no bloco central do módulo ESS-130 do manifold sem 
+identificação de escape de gás. Detalhe do local com escape de gás entre os 
+módulos de bombordo, na extremidade da face leste do 
+manifold. Visão panorâmica da área de identificação do escape 
+de gás entre os módulos de bombordo, na extremidade da 
+face leste do manifold. 
+6. CONCLUSÃO 
+ Observado escape de gás contínuo de média intensidade (não sendo possível quantificar) entre os módulos de 
+bombordo, na extremidade da face leste do manifold.  Não foi observado o escape de gás na instrumentação lateral no bloco central do módulo ESS-130 do manifold, 
+mencionado em relatórios anteriores CMro18-326, CMro19-334 e SPro20-051;  
+ Realizado o levantamento dos status das válvulas do manifold MSG-RO-01B / PRA-1;  
+ Realizada a inspeção no manifold MSG-RO-01B em busca de escape de gás para o meio externo e observado 
+apenas um ponto de escape de gás; 
+ Ao término do monitoramento do escape de gás a embarcação CBO Guanabara foi liberada para seguir 
+programação. SIM  ☐ NÃO Escape de gás entre os módulos de 
+bombordo, na extremidade da face leste 
+do manifold  
+(I) Foi identificada alguma avaria no objeto de intervenção?","{'recommendations': [{'recommendation': 'opção 5', 'location': 'equipamento', 'type': 'escape de bolhas de gás'}]}"
+61,"OUTROS PONTOS RELEVANTES 
+•  Formação de hidrato no solo marinho – Face 3. 
+ 
+ 
+Foto 47. Formação de hidrato no solo marinho –","{'recommendations': [{'recommendation': 'opção 1', 'location': 'leito/solo marinho', 'type': 'hidrato'}]}"
