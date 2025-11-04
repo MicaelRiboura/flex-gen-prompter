@@ -1,0 +1,16 @@
+from flexgenprompterlib.techniques.base_workflow import BaseWorkflow
+from langgraph.graph import END
+from .nodes import FewShotAnswerNode
+
+class FewShotPromptingWorkflow(BaseWorkflow):
+    def __init__(self, state, model, dataset_name):
+        super().__init__(state, model)
+        self.dataset_name = dataset_name
+    
+    def run(self, prompt):
+        super().__init__(self.state, self.model)
+        self.add_node("few_shot_answer", FewShotAnswerNode(model=self.model, dataset_name=self.dataset_name).invoke)
+        self.set_entry_point("few_shot_answer")
+        self.add_edge("few_shot_answer", END)
+        app = self.compile(save_in="b_few_shot_prompting_graph.png")
+        return app.invoke({"prompt": prompt})
