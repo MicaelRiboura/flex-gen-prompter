@@ -3,7 +3,7 @@ from .state import SelfConsistencyPromptingState
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from collections import Counter
-from .prompts import prompts
+from .prompts import SelfConsistencyPrompts
 from ..schemas import schemas
 import re
 import json
@@ -14,11 +14,9 @@ class AnswersGeneratorNode(BaseNode):
         self.dataset_name = dataset_name
         response_schema = schemas.get(self.dataset_name)
         super().__init__(model=model, response_schema=response_schema)
-        self.prompting_map = prompts.get('answers_generator_node')
 
     def invoke(self, state) -> SelfConsistencyPromptingState:
-        template = self.prompting_map\
-            .get(self.dataset_name)
+        template = SelfConsistencyPrompts.get('answers_generator_node', self.dataset_name)
 
         responses = []
         for _ in range(state.get('num_responses', 5)):

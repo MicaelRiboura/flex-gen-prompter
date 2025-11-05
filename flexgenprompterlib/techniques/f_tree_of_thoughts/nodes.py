@@ -5,7 +5,7 @@ np.float_ = np.float64
 from typing import List
 from flexgenprompterlib.techniques.base_node import BaseNode
 from ..schemas import schemas
-from .prompts import prompts
+from .prompts import TreeOfThoughtsPrompts
 from .state import TreeOfThoughtPromptingState
 
 class ExpandNode(BaseNode):
@@ -13,10 +13,9 @@ class ExpandNode(BaseNode):
         self.limit_breadth = limit_breadth
         self.dataset_name = dataset_name
         super().__init__(model, temperature=0.7)
-        self.prompting_map: dict = prompts.get('expand_node')
 
     def get_samples(self, problem, strategy, candidate, n_generate_sample, graph):
-        template = self.prompting_map.get(self.dataset_name)
+        template = TreeOfThoughtsPrompts.get('expand_node', self.dataset_name)
         samples = []
         for _ in range(n_generate_sample):
             res = super().invoke(
@@ -73,7 +72,6 @@ class EvaluateNode(BaseNode):
         self.dataset_name = dataset_name
         super().__init__(model, temperature=0.7)
         self.n_evaluate = n_evaluate
-        self.prompting_map = prompts.get('evaluate_node')
 
     def count_votes(self, vote_outputs, n_candidates):
         vote_results = [0] * n_candidates
@@ -88,7 +86,7 @@ class EvaluateNode(BaseNode):
         return vote_results
     
     def get_votes(self, problem, strategy, candidates, n_evaluate):
-        template = self.prompting_map.get(self.dataset_name)
+        template = template = TreeOfThoughtsPrompts.get('evaluate_node', self.dataset_name)
         
         choices_str = ''
         # Adiciona escolhas dos candidatos no prompt
