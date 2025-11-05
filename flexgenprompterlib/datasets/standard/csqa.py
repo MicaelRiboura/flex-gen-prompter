@@ -4,7 +4,6 @@ from datasets import load_dataset
 class CSQADataset(IDataset):
     def __init__(self):
         self.data = []
-        self.load()
 
     def load(self):
         data = load_dataset("commonsense_qa", "default")["validation"]
@@ -21,3 +20,5 @@ class CSQADataset(IDataset):
             q = raw_q + " " + choice
             a = d["answerKey"]
             self.data.append({"content": q, "label": a})
+
+        return self.data

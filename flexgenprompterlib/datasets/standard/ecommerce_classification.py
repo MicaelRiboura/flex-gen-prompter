@@ -3,8 +3,7 @@ import pandas as pd
 
 class EcommerceClassificationDataset(IDataset):
     def __init__(self):
-        self.data = [] 
-        self.load()
+        self.data = []
     
     def load(self):
         df = pd.read_csv('flexgenprompterlib/datasets/data/ecommerceDataset.csv')
@@ -13,3 +12,5 @@ class EcommerceClassificationDataset(IDataset):
             content = row[1]
             label = row[0]
             self.data.append({"content": content, "label": label})
+        
+        return self.data
