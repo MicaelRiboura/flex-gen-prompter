@@ -21,11 +21,11 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Configurações do Celery
 # Use a URL do seu servidor Redis. Se estiver rodando localmente, esta é a padrão.
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_BROKER_URL = 'redis://redis:6379/0'
 
 # Opcional: Armazenar os resultados das tarefas no Redis também.
 # Isso é essencial para que você possa verificar o status de uma tarefa.
-CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
