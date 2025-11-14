@@ -1,15 +1,22 @@
 from flexgenprompterlib import WorkflowFactory, AccuracyMetric
-import tqdm
+from tqdm import tqdm
 import re
 
 class BenchmarkService:
-    def evaluate(self, model, dataset_data, techniques, num_samples=None, update_state=lambda **kwargs: None):
+    def extract_answer(self, output):
+        print(f'output: {output}')
+        answer = output.replace('.', '')
+
+        return answer
+
+    
+    def evaluate(self, model, dataset_name, dataset_data, techniques, num_samples=None, update_state=lambda **kwargs: None):
         total = len(dataset_data)
         techniques_scores = {}
         total = total * len(techniques)
         steps = 0
         for technique in techniques:
-            workflow = WorkflowFactory(model=model, dataset_name=self.dataset_name).create_workflow(technique)
+            workflow = WorkflowFactory(model=model, dataset_name=dataset_name).create_workflow(technique)
 
             preds = []
             labels = []
@@ -26,7 +33,7 @@ class BenchmarkService:
                     state='PROGRESS', 
                     meta={
                         'current': steps + 1, 
-                        'total': num_samples * len(self.techniques) if num_samples and num_samples <= self.total else self.total
+                        'total': num_samples * len(techniques) if num_samples and num_samples <= total else total
                     }
                 )
                 # try:
