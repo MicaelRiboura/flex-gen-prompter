@@ -26,6 +26,7 @@ class DatasetsService:
             )
 
     def list_datasets(self):
+         DatasetFactory.clear()
          self._load_datasets()
          datasets = DatasetFactory.dataset_factory.keys()
          return list(datasets)

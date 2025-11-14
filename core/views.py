@@ -16,18 +16,17 @@ import pandas as pd
 def home(request):
     service = DatasetsService()
     datasets = service.list_datasets()
-    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
-    datasets.extend(custom_datasets)
     techniques = WorkflowFactory(model=None).workflow_factory.keys()
     return render(request, 'home.html', {'datasets': datasets, 'techniques': techniques })
 
 
 def datasets(request):
+    return render(request, 'datasets.html')
+
+def datasets_json(request):
     service = DatasetsService()
     datasets = service.list_datasets()
-    custom_datasets = list(Dataset.objects.values_list('name', flat=True))
-    datasets.extend(custom_datasets)
-    return render(request, 'datasets.html', {'datasets': datasets})
+    return JsonResponse({'datasets': datasets})
 
 def get_dataset_details(request, dataset_name):
     service = DatasetsService()
@@ -116,11 +115,18 @@ def upload_dataset_csv(request):
         upload_dir = os.path.join(settings.MEDIA_ROOT, 'uploads')
         os.makedirs(upload_dir, exist_ok=True)
 
-        # Save file
         file_path = os.path.join(upload_dir, file.name)
+
+        # Save file
         with open(file_path, 'wb+') as destination:
             for chunk in file.chunks():
                 destination.write(chunk)
+
+        # Validate CSV structure
+        df = pd.read_csv(file_path)
+        print('columns: ', df.columns.tolist())
+        if len(df.columns.tolist()) != 2 and df.columns.tolist() != ['content', 'label']:
+            return JsonResponse({'error': 'O dataset deve conter apenas as colunas: content, label'}, status=400)
                 
         dataset_name = file.name.replace('.csv', '')
         if Dataset.objects.filter(name=dataset_name).count() > 0:

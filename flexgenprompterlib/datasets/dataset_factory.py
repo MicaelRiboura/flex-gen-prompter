@@ -15,6 +15,14 @@ class DatasetFactory:
         cls.dataset_factory[name] = class_ref
 
     @classmethod
+    def clear(cls):
+        cls.dataset_factory = {
+            "gsm8k": GSM8KDataset,
+            # "csqa": CSQADataset,
+            "ecommerce_classification": EcommerceClassificationDataset,
+        }
+
+    @classmethod
     def get(cls, dataset_name: str):
         dataset_class = cls.dataset_factory.get(dataset_name)
         return dataset_class().load() if dataset_class else None
