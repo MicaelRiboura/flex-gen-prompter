@@ -6,7 +6,7 @@ class GSM8KDataset(IDataset):
         self.data = []
     
     def load(self):
-        data = self._load_dataset("gsm8k", "main")["test"]
+        data = load_dataset("gsm8k", "main")["test"]
         for d in data:
             content = d["question"].strip()
             label = d["answer"].split("#### ")[-1]
