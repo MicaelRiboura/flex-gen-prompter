@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from .tasks import evaluate_workflows
 from celery.result import AsyncResult
 from django.views.decorators.http import require_POST
-from core.prompting_techniques.workflow_factory import WorkflowFactory
+from flexgenprompterlib import WorkflowFactory
 import os
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt

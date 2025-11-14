@@ -1,6 +1,5 @@
 import time
 from celery import shared_task
-from core.evaluators.accuracy_evaluator import AccuracyEvaluator
 from core.services.benchmark_service import BenchmarkService
 from core.services.datasets_service import DatasetsService
 

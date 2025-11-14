@@ -1,6 +1,5 @@
 from flexgenprompterlib.techniques.base_node import BaseNode
-from core.prompting_techniques.b_few_shot_prompting.state import FewShotPromptingState
-from langchain.prompts import PromptTemplate
+from .state import FewShotPromptingState
 from ..schemas import schemas
 from .prompts import FewShotPrompts
 
