@@ -3,6 +3,45 @@ const fileInput = document.getElementById('fileInput');
 const message = document.getElementById('message');
 const cardDatasetFile = document.getElementById('cardDatasetFile');
 
+function renderDatasetsTable() {
+  fetch('/datasets-data/')
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.getElementById('datasets-table').querySelector('tbody');
+      let rows = [];
+      if (data?.datasets && data?.datasets.length != 0) {
+        rows = data.datasets.map(dataset => {
+          return `
+              <tr class="bg-white border-b border-gray-200">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                        ${dataset}
+                    </th>
+                    <td class="px-6 py-4 text-blue-600 text-lg hover:text-blue-800">
+                        <a href="/datasets/${dataset}/">
+                            <i class="fa-solid fa-eye cursor-pointer"></i>
+                        </a>
+                    </td>
+                </tr>
+          `;
+        });
+      } else {
+        rows = [`
+            <tr class="bg-white">
+                <th colspan="2" scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                    Nenhum dataset disponível.
+                </th>
+            </tr>
+        `];
+      }
+
+      tableBody.innerHTML = rows.join('');
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderDatasetsTable();
+});
+
 dropzone.addEventListener('click', () => fileInput.click());
 
 dropzone.addEventListener('dragover', (e) => {
@@ -28,6 +67,8 @@ dropzone.addEventListener('drop', (e) => {
   else {
     dropzone.style.display = 'flex';
   }
+
+  fileInput.files = e.dataTransfer.files;
 });
 
 fileInput.addEventListener('change', (e) => {
@@ -51,7 +92,6 @@ document.getElementById('btnImportDataset').addEventListener('click', () => {
     dropzone.style.display = 'flex';
     cardDatasetFile.classList.add('hidden');
     cardDatasetFile.classList.remove('flex');
-    window.location.reload();
   }
 });
 
@@ -70,10 +110,13 @@ function uploadFile(file) {
 
   xhr.onload = function () {
     if (xhr.status === 200) {
-      const response = JSON.parse(xhr.responseText);
-      message.textContent = `✅ ${response.message}`;
+      document.getElementById('importDatasetModal').classList.add('hidden');
+      setTimeout(() => {
+        renderDatasetsTable();
+      }, 500);
     } else {
-      message.textContent = `❌ Upload falhou!`;
+      const response = JSON.parse(xhr.responseText);
+      message.textContent = '❌ ' + response.error || '❌ Um erro ocorreu durante o upload.';
     }
   };
 

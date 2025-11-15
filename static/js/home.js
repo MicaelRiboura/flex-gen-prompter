@@ -1,9 +1,18 @@
 
 // import * as echarts from 'echarts';
-
+function getPallete() {
+    return [
+        '#005C66',
+        '#00A2AC',
+        '#00F2CE',
+        '#023C4C',
+        '#077897',
+        '#008DF2',
+    ];
+}
 
 function renderBarChart(data) {
-    console.log(String(data))
+    console.log(data)
     let chartDom = document.getElementById('barChart');
     chartDom.classList.remove('hidden');
     if (!chartDom) {
@@ -22,7 +31,7 @@ function renderBarChart(data) {
     let option = {
         xAxis: {
             type: 'category',
-            data: ['Zero-Shot', 'Few-Shot', 'Chain-of-Thought', 'Generate Knowledge', 'Self-Consistency', 'Tree of Thought'],
+            data: Object.keys(data).map(key => key.replaceAll('_', '-')),
             axisLabel: {
                 interval: 0 // Show all labels
             }
@@ -31,16 +40,13 @@ function renderBarChart(data) {
             type: 'value',
             max: 100
         },
+        color: getPallete(),
         series: [
             {
-                data: [
-                    { value: data?.zero_shot ? data.zero_shot * 100 : 0, itemStyle: { color: '#005C66' } },
-                    { value: data?.few_shot ? data.few_shot * 100 : 0, itemStyle: { color: '#00A2AC' } },
-                    { value: data?.chain_of_thought ? data.chain_of_thought * 100 : 0, itemStyle: { color: '#00F2CE' } },
-                    { value: data?.generate_knowledge ? data.generate_knowledge * 100 : 0, itemStyle: { color: '#023C4C' } },
-                    { value: data?.self_consistency ? data.self_consistency * 100 : 0, itemStyle: { color: '#077897' } },
-                    { value: data?.tree_of_thoughts ? data.tree_of_thoughts * 100 : 0, itemStyle: { color: '#008DF2' } },
-                ],
+                data: Object.values(data).map((value, index) => {
+                    console.log(value)
+                    return { value: String(parseFloat(value * 100.0).toFixed(1)), itemStyle: { color: getPallete()[index] } }
+                }),
                 type: 'bar',
                 showBackground: true,
                 backgroundStyle: {
