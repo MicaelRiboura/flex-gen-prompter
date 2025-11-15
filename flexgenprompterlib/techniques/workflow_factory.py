@@ -10,7 +10,7 @@ class WorkflowFactory:
         self.workflow_factory = {
             "zero_shot": ZeroShotPromptingWorkflow(state=ZeroShotPromptingState, model=model, dataset_name=dataset_name),
             "few_shot": FewShotPromptingWorkflow(state=FewShotPromptingState, model=model, dataset_name=dataset_name),
-            "chain_of_thought": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState, model=model, dataset_name=dataset_name),
+            "chain_of_thoughts": ChainOfThoughtPromptingWorkflow(state=ChainOfThoughtPromptingState, model=model, dataset_name=dataset_name),
             "generate_knowledge": GenerateKnowledgePromptingWorkflow(state=GenerateKnowledgePromptingState, model=model, dataset_name=dataset_name),
             "self_consistency": SelfConsistencyPromptingWorkflow(state=SelfConsistencyPromptingState, model=model, dataset_name=dataset_name),
             "tree_of_thoughts": TreeOfThoughtPromptingWorkflow(state=TreeOfThoughtPromptingState, model=model, dataset_name=dataset_name)

@@ -1,5 +1,6 @@
 from .base_node import BaseNode
 from .base_workflow import BaseWorkflow
+from .prompt_factory import PromptFactory
 from .workflow_factory import WorkflowFactory
 from .a_zero_shot.prompts import ZeroShotPrompts
 from .b_few_shot.prompts import FewShotPrompts

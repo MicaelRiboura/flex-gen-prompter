@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .services.datasets_service import DatasetsService
+from .services.prompts_service import PromptsService
 from django.core.paginator import Paginator
 from django.http import JsonResponse
 from .tasks import evaluate_workflows
@@ -9,7 +10,7 @@ from flexgenprompterlib import WorkflowFactory
 import os
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
-from core.models import Dataset
+from core.models import Dataset, Prompt
 import pandas as pd
 
 # Create your views here.
@@ -125,7 +126,8 @@ def upload_dataset_csv(request):
         # Validate CSV structure
         df = pd.read_csv(file_path)
         print('columns: ', df.columns.tolist())
-        if len(df.columns.tolist()) != 2 and df.columns.tolist() != ['content', 'label']:
+        if len(df.columns.tolist()) > 3 and ['content', 'label'] in df.columns.tolist():
+            os.remove(file_path)
             return JsonResponse({'error': 'O dataset deve conter apenas as colunas: content, label'}, status=400)
                 
         dataset_name = file.name.replace('.csv', '')
@@ -137,6 +139,54 @@ def upload_dataset_csv(request):
             filename=file.name
         )
 
+        prompts_service = PromptsService()
+        prompts_service.initialize_dataset_prompts(dataset_name)
+
         return JsonResponse({'message': 'Dataset carregado com sucesso!', 'filename': file.name})
 
     return JsonResponse({'error': 'Invalid request'}, status=400)
+
+
+def get_prompts(request):
+    service = DatasetsService()
+    datasets = service.list_datasets()
+    techniques = WorkflowFactory(model=None).workflow_factory.keys()
+    return render(request, 'prompts.html', {'datasets': datasets, 'techniques': techniques })
+
+def get_nodes_framework(request):
+    technique = request.GET.get('technique')
+    dataset = request.GET.get('dataset')
+
+    service = PromptsService()
+    nodes_with_prompts = service.get_prompts(technique, dataset)
+    return JsonResponse({'nodes_with_prompts': nodes_with_prompts })
+
+def update_prompt(request):
+    if request.method == 'POST':
+        technique = request.POST.get('technique')
+        dataset_name = request.POST.get('dataset')
+        node = request.POST.get('node')
+        new_prompt = request.POST.get('new_prompt')
+        print('post ', request.POST)
+        print({
+            'technique': technique,
+            'dataset_name': dataset_name,
+            'node': node,
+            'new_prompt': new_prompt
+        })
+
+        if technique is None or dataset_name is None or node is None or new_prompt is None:
+            return JsonResponse({'error': 'Missing required parameters.'}, status=400)
+
+        prompts_service = PromptsService()
+        is_updated = prompts_service.update_prompt(
+            technique=technique,
+            dataset_name=dataset_name,
+            node=node,
+            new_prompt=new_prompt
+        )
+
+        if is_updated:
+            return JsonResponse({'message': 'Prompt atualizado com sucesso!'})
+
+        return JsonResponse({'error': 'Falha na atualização do prompt!'})

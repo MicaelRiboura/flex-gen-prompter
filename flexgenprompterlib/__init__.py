@@ -2,7 +2,8 @@ from .datasets import DatasetFactory
 from .techniques import (
     BaseNode, 
     BaseWorkflow, 
-    WorkflowFactory, 
+    WorkflowFactory,
+    PromptFactory,
     ZeroShotPrompts, 
     FewShotPrompts, 
     ChainOfThoughtsPrompts, 
