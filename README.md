@@ -16,7 +16,7 @@
 
 ### Execução com Docker
 
-### 1. Execute o comando para iniciar os containers dockers pela primeira vez
+#### 1. Execute o comando para iniciar os containers dockers pela primeira vez
 ```
 docker compose up --build -d
 ```
