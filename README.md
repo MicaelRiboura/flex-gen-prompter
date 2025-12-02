@@ -54,9 +54,41 @@ python manage.py runserver
 ```
 
 #### 6. Execute o redis com Docker
-para a instalação do Redis, 
+> ⚠️ Para a instalação do Redis, é necessário o uso do WSL caso esteja utilizando o Windows.
+
+
+No Windows/Linux:
+
+##### 6.1 Atualize os pacotes
 ```
-run -d --name redis -p 6379:6379 redis
+sudo apt update
+```
+
+##### 6.2 Instale o Redis
+```
+sudo apt install redis-server
+```
+
+##### 6.3 Verifique a instalação
+```
+redis-server --version
+```
+
+##### 6.4 Inicie o servidor
+```
+sudo service redis-server start
+```
+
+No MAC:
+
+##### 6.1 Instale o redis
+```
+rew install redis
+```
+
+##### 6.2 Inicie o servidor
+```
+brew services start redis
 ```
 
 ### 7. Execute o worker do celery
