@@ -31,6 +31,9 @@ class GenerateKnowledgePrompts(BasePrompts):
             'ecommerce_classification': """
                 You are an AI assistant and you are very good at doing ecommerce products classification.
                 You are going to help a customer to classify the products in the ecommerce website.
+                Here is some knowledge about the topic:
+                
+                {knowledge}
                 Make a strategy then write. Your output should be of the following format:
                 Product Description:
                 {prompt}
@@ -39,7 +42,7 @@ class GenerateKnowledgePrompts(BasePrompts):
                 Answer:
                 Your answer to the question.
                 You are only allowed to choose one of the following 4 categories: 
-                - Household
+                - Households
                 - Books
                 - Clothing & Accessories 
                 - Electronics

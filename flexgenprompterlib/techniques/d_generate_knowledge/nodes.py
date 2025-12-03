@@ -7,12 +7,11 @@ class KnowledgeGeneratorNode(BaseNode):
     def __init__(self, model, dataset_name):
         self.dataset_name = dataset_name
         super().__init__(model=model)
-        self.prompting_map = prompts.get('knowledge_generator_node')
     
     def invoke(self, _state) -> GenerateKnowledgePromptingState:
-        template = self.prompting_map.get(self.dataset_name)
-        
-        answer = super().invoke(template=template, input=None)['answer']
+        template = GenerateKnowledgePrompts.get('knowledge_generator_node', self.dataset_name)
+        print('template generator knowledge: ', template)
+        answer = super().invoke(template=template, input={'prompt': 'prompt'})['answer']
         
         return { 'knowledge': answer }
         
@@ -24,7 +23,7 @@ class AnswerNode(BaseNode):
     
     def invoke(self, state) -> GenerateKnowledgePromptingState:
         template = GenerateKnowledgePrompts.get('answer_node', self.dataset_name)
-
+        print('template answer: ', template)
         return super().invoke(
             template=template, 
             input={

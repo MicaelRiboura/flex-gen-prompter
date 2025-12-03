@@ -21,7 +21,7 @@ class ExpandNode(BaseNode):
             res = super().invoke(
                 template=template, 
                 input={
-                    'prompt': problem, 
+                    'problem': problem, 
                     'strategy': strategy + f"\n{candidate}"
                 }
             )['answer']
@@ -98,7 +98,7 @@ class EvaluateNode(BaseNode):
             res = super().invoke(
                 template=template, 
                 input={
-                    'prompt': problem, 
+                    'problem': problem, 
                     'strategy': strategy,
                     'choices': choices_str,
                 }
